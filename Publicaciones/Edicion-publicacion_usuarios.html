@@ -5,10 +5,13 @@
 <section>
 
     <h4>Descripción Publicación:</h4>
-    <input placeholder="Nombre del Anuncio" class="input_comc" type="text" name="ItemName" id="ItemName" maxlength="255"/>
+    
+  <input placeholder="Nombre del Anuncio" class="input_comc" type="text" name="ItemName" id="ItemName" maxlength="255"/>
 
+  <textarea  placeholder="Resumen Publicacion" name="CAT_Custom_6" id="CAT_Custom_6" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+    
     <textarea  placeholder="Resumen Publicacion" name="CAT_Custom_6" id="CAT_Custom_6" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-
+  
     <textarea placeholder="Descripción del Anuncio" name="ItemDescription" id="ItemDescription" cols="10" rows="4" class="cat_listbox" text=""></textarea>
 
     <!-- Listado Categorías
@@ -502,17 +505,17 @@
 
 <section>
     <h4>Imagenes y Video:</h4>
-    <label>Imagen 1<input placeholder="Imagen" type="file" name="CAT_Custom_1" id="CAT_Custom_1" class="input_file" /></label>
-    <label>Imagen 2<input placeholder="Imagen 2" type="file" name="CAT_Custom_17" id="CAT_Custom_17" class="input_file"/></label>
-    <label>Imagen 3<input placeholder="Imagen 3" type="file" name="CAT_Custom_18" id="CAT_Custom_18" class="input_file"/></label>
-    <label>Imagen 4<input placeholder="Imagen 4" type="file" name="CAT_Custom_19" id="CAT_Custom_19" class="input_file"/></label>
-    <label>Imagen 5<input placeholder="Imagen 5" type="file" name="CAT_Custom_44" id="CAT_Custom_44" class="input_file"/></label>
-    <label>Imagen 6<input placeholder="Imagen 6" type="file" name="CAT_Custom_45" id="CAT_Custom_45" class="input_file"/></label>
-    <label>Imagen 7<input placeholder="Imagen 7"type="file" name="CAT_Custom_46" id="CAT_Custom_46" class="input_file"/></label>
-    <label>Imagen 8<input placeholder="Imagen 8"type="file" name="CAT_Custom_47" id="CAT_Custom_47" class="input_file"/></label>
-    <label>Imagen 9<input placeholder="Imagen 9"type="file" name="CAT_Custom_48" id="CAT_Custom_48" class="input_file"/></label>
-    <label>Imagen 10<input placeholder="Imagen 10" type="file" name="CAT_Custom_49" id="CAT_Custom_49" class="input_file"/></label>
-    <label>Video </label><input placeholder="Código video YouTube" type="text" maxlength="4000" name="CAT_Custom_20" id="CAT_Custom_20" class="cat_textbox"/></label>
+    <label class="imagenessubida"><strong>Imagen 1</strong><input placeholder="Imagen" type="file" name="CAT_Custom_1" id="CAT_Custom_1" class="input_file" /></label>
+    <label class="imagenessubida"><strong>Imagen 2</strong><input placeholder="Imagen 2" type="file" name="CAT_Custom_17" id="CAT_Custom_17" class="input_file"/></label>
+    <label class="imagenessubida"><strong>Imagen 3</strong><input placeholder="Imagen 3" type="file" name="CAT_Custom_18" id="CAT_Custom_18" class="input_file"/></label>
+    <label class="imagenessubida"><strong>Imagen 4</strong><input placeholder="Imagen 4" type="file" name="CAT_Custom_19" id="CAT_Custom_19" class="input_file"/></label>
+    <label class="imagenessubida"><strong>Imagen 5</strong><input placeholder="Imagen 5" type="file" name="CAT_Custom_44" id="CAT_Custom_44" class="input_file"/></label>
+    <label class="imagenessubida"><strong>Imagen 6</strong><input placeholder="Imagen 6" type="file" name="CAT_Custom_45" id="CAT_Custom_45" class="input_file"/></label>
+    <label class="imagenessubida"><strong>Imagen 7</strong><input placeholder="Imagen 7"type="file" name="CAT_Custom_46" id="CAT_Custom_46" class="input_file"/></label>
+    <label class="imagenessubida"><strong>Imagen 8</strong><input placeholder="Imagen 8"type="file" name="CAT_Custom_47" id="CAT_Custom_47" class="input_file"/></label>
+    <label class="imagenessubida"><strong>Imagen 9</strong><input placeholder="Imagen 9"type="file" name="CAT_Custom_48" id="CAT_Custom_48" class="input_file"/></label>
+    <label class="imagenessubida"><strong>Imagen 10</strong><input placeholder="Imagen 10" type="file" name="CAT_Custom_49" id="CAT_Custom_49" class="input_file"/></label>
+    <label class="imagenessubida"><strong>Video</strong><br /><input placeholder="Código video YouTube" type="text" maxlength="4000" name="CAT_Custom_20" id="CAT_Custom_20" class="codigo_video_youtube"/></label>
 </section>
 
 <section>
@@ -539,7 +542,7 @@
 
 <section>
     <h4>Garantía:</h4>
-    <input placeholder="Garantía" type="text" maxlength="4000" name="CAT_Custom_85" id="CAT_Custom_85" class="cat_textbox"/>
+    <input placeholder="Garantía" type="text" maxlength="4000" name="CAT_Custom_85" id="CAT_Custom_85" class="input_comc"/>
 </section>
 
 <section>
