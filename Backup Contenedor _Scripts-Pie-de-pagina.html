@@ -1,0 +1,92 @@
+<!-- SCRIPT CONTADOR CIUDADES -->
+<script type="text/javascript" language="javascript" src="/js/contador-ciudades.js"></script>
+<!-- SCRIPT CURRENCY -->
+<script src="/js/Currency/autoNumeric.js" type="text/javascript">
+    
+</script>
+<!-- SCRIPT LIMITAR CARACTERES -->
+<script type="text/javascript" language="javascript" src="http://arcacom.businesscatalyst.com/scripts/Dotdot/jquery.dotdotdot.js"></script>
+<script type="text/javascript" language="javascript">
+    $(function() {
+        $('.dot1').dotdotdot();
+        $('#dot2').dotdotdot();
+        $('#dot3').dotdotdot({
+            after: 'a.readmore'
+        });
+        $('#dot4').dotdotdot({
+            watch: 'window'
+        });
+        $('#dot5 .pathname').each(function() {
+            var path = $(this).html().split('/');
+            if (path.length > 1) {
+                var name = path.pop();
+                $(this).html(path.join('/') + '<span class="filename">/' + name + '</span>');
+                $(this).dotdotdot({
+                    after: '.filename',
+                    wrap: 'letter'
+                });
+            }
+        });
+    });
+</script>
+<!-- /SCRIPT LIMITAR CARACTERES -->
+<!-- CONEXI&Oacute;N WEBAPP ANUNCIANTES-PUBLICACIONES-->
+<style>
+    .related li {
+        display: none;
+    }
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+
+    var itemID = $('#item-id').data('item-id');
+            
+    $('.related li').hide();
+            
+    $('.related li').each(function() {
+        var relatedID = $(this).data('related-id');
+        if (relatedID != itemID) {
+            $(this).remove();
+          } else {
+            $(this).show();
+          }
+    });
+        
+    //SCRIPT CURRENCY -->
+    $(function($) {
+        $('.currency-interno').autoNumeric('init');
+    });
+        
+});
+    
+    $("#boton-listado").click(function() {
+        $('.currency-interno2').autoNumeric('init');
+});
+    
+    
+    
+    
+    /* INICIO COMPORTAMIENTOS FILTROS CIUDADES*/
+    
+    $(function() {
+        $("#ver-mas-ciudades").click(function() {
+            $(".contenedor-ciudades-menos").attr("class", "contenedor-ciudades-mas");
+            $("#ver-menos-ciudades").show();
+            $("#ver-mas-ciudades").hide();
+            return false;
+        });
+    });
+    
+    $(function() {
+        $("#ver-menos-ciudades").click(function() {
+            $(".contenedor-ciudades-mas").attr("class", "contenedor-ciudades-menos");
+            $("#ver-mas-ciudades").show();
+            $("#ver-menos-ciudades").hide();
+            return false;
+        });
+    });
+    
+    
+    
+    /* FINAL COMPORTAMIENTOS FILTROS CIUDADE*/
+</script>
