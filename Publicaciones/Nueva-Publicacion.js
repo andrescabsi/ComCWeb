@@ -3,9 +3,25 @@
     $(document).ready(function() {
         
         eliminarCampos();
-    	
+    	eliminarSubcategorias();
     });
     
+function eliminarSubcategorias(){
+// ELIMINAR SUBCATEGORÍAS ADICIONALES
+    var indicador = categoria_publicacion_actual;
+    
+    if (indicador == "BR"){
+
+        $("#CAT_Category").find("option").slice(1,63).remove();
+        $("#CAT_Category").find("option").slice(37,500).remove();
+        
+    } else if{
+
+    }
+
+
+}
+
 
 function eliminarCampos(){
         
@@ -21,8 +37,6 @@ function eliminarCampos(){
             $(".data_Aplicaciones").remove();
         // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(1)").attr('selected', 'selected');
-        // ELIMINAR SUBCATEGORÍAS ADICIONALES
-            
             
         } else if (indicador == "VH"){
             console.log("Vehiculos");
@@ -31,7 +45,7 @@ function eliminarCampos(){
             $(".data_CompraVenta").remove();
             $(".data_Empleo").remove();
             $(".data_Aplicaciones").remove();
-            
+        // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(2)").attr('selected', 'selected');
             
         }else if (indicador == "CV"){
@@ -41,7 +55,7 @@ function eliminarCampos(){
             //$(".data_CompraVenta").remove();
             $(".data_Empleo").remove();
             $(".data_Aplicaciones").remove();
-            
+        // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(3)").attr('selected', 'selected');
             
         }else if (indicador == "EM"){
@@ -51,7 +65,7 @@ function eliminarCampos(){
             $(".data_CompraVenta").remove();
             //$(".data_Empleo").remove();
             $(".data_Aplicaciones").remove();
-            
+        // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(4)").attr('selected', 'selected');
             
         }else if (indicador == "APP"){
@@ -61,7 +75,7 @@ function eliminarCampos(){
             $(".data_CompraVenta").remove();
             $(".data_Empleo").remove();
             //$(".data_Aplicaciones").remove();
-            
+        // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(5)").attr('selected', 'selected');
             
         }else if (indicador == "VT"){
@@ -71,7 +85,7 @@ function eliminarCampos(){
             $(".data_CompraVenta").remove();
             $(".data_Empleo").remove();
             $(".data_Aplicaciones").remove();
-            
+        // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(6)").attr('selected', 'selected');
             
     	}else if (indicador == "SV"){
@@ -81,7 +95,7 @@ function eliminarCampos(){
             $(".data_CompraVenta").remove();
             $(".data_Empleo").remove();
             $(".data_Aplicaciones").remove();
-            
+        // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(7)").attr('selected', 'selected');
             
 		}else if (indicador == "ES"){
@@ -91,7 +105,7 @@ function eliminarCampos(){
             $(".data_CompraVenta").remove();
             $(".data_Empleo").remove();
             $(".data_Aplicaciones").remove();
-            
+        // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(8)").attr('selected', 'selected');
             
         }else if (indicador == "ON"){
@@ -101,7 +115,7 @@ function eliminarCampos(){
             $(".data_CompraVenta").remove();
             $(".data_Empleo").remove();
             $(".data_Aplicaciones").remove();
-            
+        // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(9)").attr('selected', 'selected');
             
     	}else if (indicador == "PR"){
@@ -111,7 +125,7 @@ function eliminarCampos(){
             $(".data_CompraVenta").remove();
             $(".data_Empleo").remove();
             $(".data_Aplicaciones").remove();
-            
+        // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(10)").attr('selected', 'selected');
             
 		}else if (indicador == "CC"){
@@ -121,7 +135,7 @@ function eliminarCampos(){
             $(".data_CompraVenta").remove();
             $(".data_Empleo").remove();
             $(".data_Aplicaciones").remove();
-            
+        // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(11)").attr('selected', 'selected');
             
         }else{
