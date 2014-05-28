@@ -7,20 +7,13 @@
     });
     
 function eliminarSubcategorias(){
-// ELIMINAR SUBCATEGORÍAS ADICIONALES
-    var indicador = categoria_publicacion_actual;
-    
-    if (indicador == "BR"){
+// SELECCION DE CATEGORIAS Y SUBCATEGORIAS PADRE
 
-        $("#CAT_Category").find("option").slice(1,63).remove();
-        $("#CAT_Category").find("option").slice(37,500).remove();
-        
-    } else if{
-
-    }
-
+    $(".$hijo_data_pub").click(function(){
+    $('.$padre_data_pub').attr("selected","selected"); 
 
 }
+
 
 
 function eliminarCampos(){
