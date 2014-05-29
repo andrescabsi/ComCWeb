@@ -1,17 +1,19 @@
 // Ruta: /js/Formularios-publicacion/Nueva-Publicacion.js
 
-    $(document).ready(function() {
+$(document).ready(function() {
         
-        eliminarCampos();
-    	eliminarSubcategorias();
-    });
+    eliminarCampos();
+    eliminarSubcategorias();
+    
+});
     
 function eliminarSubcategorias(){
 // SELECCION DE CATEGORIAS Y SUBCATEGORIAS PADRE
-
-    $(".$hijo_data_pub").click(function(){
-    $('.$padre_data_pub').attr("selected","selected"); 
-
+$(".padre_data_pub").attr("selected","selected");
+    
+    $(".hijo_data_pub").click(function(){
+        $(".padre_data_pub").attr("selected","selected"); 
+    });
 }
 
 
@@ -81,7 +83,7 @@ function eliminarCampos(){
         // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(6)").attr('selected', 'selected');
             
-    	}else if (indicador == "SV"){
+        }else if (indicador == "SV"){
             //console.log("Servicios");
             $(".data_BienesRaices").remove();
             $(".data_Vehiculos").remove();
@@ -91,7 +93,7 @@ function eliminarCampos(){
         // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(7)").attr('selected', 'selected');
             
-		}else if (indicador == "ES"){
+        }else if (indicador == "ES"){
             //console.log("Emisoras");
             $(".data_BienesRaices").remove();
             $(".data_Vehiculos").remove();
@@ -111,7 +113,7 @@ function eliminarCampos(){
         // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(9)").attr('selected', 'selected');
             
-    	}else if (indicador == "PR"){
+        }else if (indicador == "PR"){
             //console.log("Periódicos y Revistas");
             $(".data_BienesRaices").remove();
             $(".data_Vehiculos").remove();
@@ -121,7 +123,7 @@ function eliminarCampos(){
         // SELECCIONAR CATEGORÍA
             $("#CAT_Custom_103 option:eq(10)").attr('selected', 'selected');
             
-		}else if (indicador == "CC"){
+        }else if (indicador == "CC"){
             //console.log("Clases y Cursos");
             $(".data_BienesRaices").remove();
             $(".data_Vehiculos").remove();
@@ -132,8 +134,8 @@ function eliminarCampos(){
             $("#CAT_Custom_103 option:eq(11)").attr('selected', 'selected');
             
         }else{
-        	$(".contenedor_formularios_publicacion form").remove();
+            $(".contenedor_formularios_publicacion form").remove();
             $(".contenedor_formularios_publicacion").append("<br /><br /> <br /><h2 class='h2' style='color:red;'>Por favor primero completa tu información antes de poder publicar</h2>");
-		}
+        }
 }
 
