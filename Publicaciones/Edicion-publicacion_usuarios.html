@@ -1,1317 +1,1322 @@
 
+<script>
+
+/*
+ var dataBienesRaices = "BR",
+        dataVehiculos = "VH",
+        dataCompraVenta = "CV",
+        dataEmpleo = "EM",
+        dataAplicaciones = "APP",
+        dataViajesTurismo = "VT",
+        dataServicios = "SV",
+        dataEmisoras = "ES",
+        dataOportunidadesNegocio = "ON",
+        dataPeriodicosRevistas = "PR",
+        dataClasesCursos = "CC";
+*/
+    
+    var categoria_publicacion_actual = "APP";
+    var subcategoriaPublicacion = "Devocionales";
+
+</script>
+
 <div class="contenedor_formularios_publicacion">
 
-  <form class="formularioPublicacionPublicaciones" name="catcustomcontentform7432" onsubmit="return checkWholeForm7432(this)" enctype="multipart/form-data" method="post" action="/CustomContentProcess.aspx?CCID=16641&OID={module_oid}&OTYPE={module_otype}">
-
-<section>
-
-    <h4>Descripción Publicación</h4>
-    
-  <input placeholder="Nombre del Anuncio" class="input_comc" type="text" name="ItemName" id="ItemName" maxlength="255"/>
-    
-<!-- Listado Categorías
-****************************************************************************************************************************************
-****************************************************************************************************************************************
- -->
-<br />
-    <select name="CAT_Category" id="CAT_Category" class="cat_listbox">
-        <option value="-1">-- Selecciona una subcategoría --</option>
-        <option id="Aplicaciones" value="112436">Aplicaciones</option>
-
-            <option id="Aplicaciones-Crecimiento" value="113213">---Crecimiento</option>
-                <option id="Aplicaciones-Crecimiento-Android" value="113239">------Android</option>
-                <option id="Aplicaciones-Crecimiento-BlackBerry" value="113241">------BlackBerry</option>
-                <option id="Aplicaciones-Crecimiento-IOSMAC" value="113240">------IOS - Mac</option>
-                <option id="Aplicaciones-Crecimiento-Nokia" value="113242">------Nokia</option>
-                <option id="Aplicaciones-Crecimiento-Otros" value="113243">------Otros</option>
-
-            <option id="Aplicaciones-Devocionales" value="113043">---Devocionales</option>
-                <option id="Aplicaciones-Devocionales-Android" value="113219">------Android</option>
-                <option id="Aplicaciones-Devocionales-BlackBerry" value="113221">------BlackBerry</option>
-                <option id="Aplicaciones-Devocionales-IOSMAC" value="113220">------IOS - Mac</option>
-                <option id="Aplicaciones-Devocionales-Nokia" value="113222">------Nokia</option>
-                <option id="Aplicaciones-Devocionales-Otros" value="113223">------Otros</option>
-
-            <option id="Aplicaciones-EstudiosBiblicos" value="113211">---Estudios Biblicos</option>
-                <option id="Aplicaciones-EstudiosBiblicos-Android" value="113229">------Android</option>
-                <option id="Aplicaciones-EstudiosBiblicos-BlackBerry" value="113231">------BlackBerry</option>
-                <option id="Aplicaciones-EstudiosBiblicos-IOSMAC" value="113230">------IOS - Mac</option>
-                <option id="Aplicaciones-EstudiosBiblicos-Nokia" value="113232">------Nokia</option>
-                <option id="Aplicaciones-EstudiosBiblicos-Otros" value="113233">------Otros</option>
-
-            <option id="Aplicaciones-Matrimonio" value="113214">---Matrimonio</option>
-                <option id="Aplicaciones-Matrimonio-Android" value="113244">------Android</option>
-                <option id="Aplicaciones-Matrimonio-BlackBerry" value="113246">------BlackBerry</option>
-                <option id="Aplicaciones-Matrimonio-IOSMAC" value="113245">------IOS - Mac</option>
-                <option id="Aplicaciones-Matrimonio-Nokia" value="113247">------Nokia</option>
-                <option id="Aplicaciones-Matrimonio-Otros" value="113248">------Otros</option>
-
-            <option id="Aplicaciones-Oracion" value="113212">---Oracion</option>
-                <option id="Aplicaciones-Oracion-Android" value="113234">------Android</option>
-                <option id="Aplicaciones-Oracion-BlackBerry" value="113236">------BlackBerry</option>
-                <option id="Aplicaciones-Oracion-IOSMAC" value="113235">------IOS - Mac</option>
-                <option id="Aplicaciones-Oracion-Nokia" value="113237">------Nokia</option>
-                <option id="Aplicaciones-Oracion-Otros" value="113238">------Otros</option>
-
-            <option id="Aplicaciones-Otras" value="113218">---Otras</option>
-                <option id="Aplicaciones-Otras-Android" value="113264">------Android</option>
-                <option id="Aplicaciones-Otras-BlackBerry" value="113265">------BlackBerry</option>
-                <option id="Aplicaciones-Otras-IOSMAC" value="113268">------IOS - Mac</option>
-                <option id="Aplicaciones-Otras-Nokia" value="113266">------Nokia</option>
-                <option id="Aplicaciones-Otras-Otros" value="113267">------Otros</option>
-
-            <option id="Aplicaciones-Peliculas" value="113210">---Peliculas</option>
-                <option id="Aplicaciones-Peliculas-Android" value="113224">------Android</option>
-                <option id="Aplicaciones-Peliculas-BlackBerry" value="113226">------BlackBerry</option>
-                <option id="Aplicaciones-Peliculas-IOSMAC" value="113225">------IOS - Mac</option>
-                <option id="Aplicaciones-Peliculas-Nokia" value="113227">------Nokia</option>
-                <option id="Aplicaciones-Peliculas-Otros" value="113228">------Otros</option>
-
-            <option id="Aplicaciones-Predicas" value="113217">---Predicas</option>
-                <option id="Aplicaciones-Predicas-Android" value="113259">------Android</option>
-                <option id="Aplicaciones-Predicas-BlackBerry" value="113261">------BlackBerry</option>
-                <option id="Aplicaciones-Predicas-IOSMAC" value="113260">------IOS - Mac</option>
-                <option id="Aplicaciones-Predicas-Nokia" value="113262">------Nokia</option>
-                <option id="Aplicaciones-Predicas-Otros" value="113263">------Otros</option>
-
-            <option id="Aplicaciones-Reflexiones" value="113216">---Reflexiones</option>
-                <option id="Aplicaciones-Reflexiones-Android" value="113254">------Android</option>
-                <option id="Aplicaciones-Reflexiones-BlackBerry" value="113256">------BlackBerry</option>
-                <option id="Aplicaciones-Reflexiones-IOSMAC" value="113255">------IOS - Mac</option>
-                <option id="Aplicaciones-Reflexiones-Nokia" value="113257">------Nokia</option>
-                <option id="Aplicaciones-Reflexiones-Otros" value="113258">------Otros</option>
-
-            <option id="Aplicaciones-Videos" value="113215">---Videos</option>
-                <option id="Aplicaciones-Videos-Android" value="113249">------Android</option>
-                <option id="Aplicaciones-Videos-BlackBerry" value="113251">------BlackBerry</option>
-                <option id="Aplicaciones-Videos-IOSMAC" value="113250">------IOS - Mac</option>
-                <option id="Aplicaciones-Videos-Nokia" value="113252">------Nokia</option>
-                <option id="Aplicaciones-Videos-Otros" value="113253">------Otros</option>
-
-        <option id="BienesRaices" value="14744">Bienes Raices</option>
-            <option id="BienesRaices-Apartamento" value="113625">---Apartamento</option>
-                <option id="BienesRaices-Apartamento-Arriendo" value="113633">------Arriendo</option>
-                <option id="BienesRaices-Apartamento-Permuta" value="113635">------Permuta</option>
-                <option id="BienesRaices-Apartamento-Venta" value="113634">------Venta</option>
-
-            <option id="BienesRaices-Bodega" value="113628">---Bodega</option>
-                <option id="BienesRaices-Bodega-Arriendo" value="113636">------Arriendo</option>
-                <option id="BienesRaices-Bodega-Permuta" value="113638">------Permuta</option>
-                <option id="BienesRaices-Bodega-Venta" value="113637">------Venta</option>
-
-            <option id="BienesRaices-Casa" value="113624">---Casa</option>
-                <option id="BienesRaices-Casa-Arriendo" value="113641">------Arriendo</option>
-                <option id="BienesRaices-Casa-Permuta" value="113639">------Permuta</option>
-                <option id="BienesRaices-Casa-Venta" value="113640">------Venta</option>
-
-            <option id="BienesRaices-Edificio" value="113630">---Edificio</option>
-                <option id="BienesRaices-Edificio-Arriendo" value="113642">------Arriendo</option>
-                <option id="BienesRaices-Edificio-Permuta" value="113644">------Permuta</option>
-                <option id="BienesRaices-Edificio-Venta" value="113643">------Venta</option>
-
-            <option id="BienesRaices-Habitacion" value="113627">---Habitación</option>
-                <option id="BienesRaices-Habitacion-Arriendo" value="113645">------Arriendo</option>
-                <option id="BienesRaices-Habitacion-Permuta" value="113647">------Permuta</option>
-                <option id="BienesRaices-Habitacion-Venta" value="113646">------Venta</option>
-
-            <option id="BienesRaices-Local" value="113626">---Local</option>
-                <option id="BienesRaices-Local-Arriendo" value="113648">------Arriendo</option>
-                <option id="BienesRaices-Local-Permuta" value="113650">------Permuta</option>
-                <option id="BienesRaices-Local-Venta" value="113649">------Venta</option>
-
-            <option id="BienesRaices-Lote" value="113629">---Lote</option>
-                <option id="BienesRaices-Lote-Arriendo" value="113651">------Arriendo</option>
-                <option id="BienesRaices-Lote-Permuta" value="113653">------Permuta</option>
-                <option id="BienesRaices-Lote-Venta" value="113652">------Venta</option>
-
-            <option id="BienesRaices-Otro" value="113632">---Otro</option>
-                <option id="BienesRaices-Otro-Arriendo" value="113654">------Arriendo</option>
-                <option id="BienesRaices-Otro-Permuta" value="113656">------Permuta</option>
-                <option id="BienesRaices-Otro-Venta" value="113655">------Venta</option>
-
-            <option id="BienesRaices-Parqueadero" value="113631">---Parqueadero</option>
-                <option id="BienesRaices-Parqueadero-Arriendo" value="113657">------Arriendo</option>
-                <option id="BienesRaices-Parqueadero-Permuta" value="113659">------Permuta</option>
-                <option id="BienesRaices-Parqueadero-Venta" value="113658">------Venta</option>
-
-        <option id="ClasesCursos" value="14075">Clases - Cursos</option>
-            <option id="ClasesCursos-ApoyoEscolar" value="113673">---Apoyo Escolar - Estimulación Temprana</option>
-            <option id="ClasesCursos-Capacitacion" value="113675">---Capacitación Profesional</option>
-            <option id="ClasesCursos-Disenoweb" value="113677">---Diseño web - Multimedia</option>
-            <option id="ClasesCursos-Idiomas" value="113674">---Idiomas</option>
-            <option id="ClasesCursos-Musica" value="113676">---Música - Arte</option>
-            <option id="ClasesCursos-Otras" value="113679">---Otras Clases</option>
-            <option id="ClasesCursos-Tutorias" value="113678">---Tutorias - Lecciones privadas</option>
-
-        <option id="CompraVenta" value="112437">Compra - Venta</option>
-
-            <option id="CompraVenta-Accesorios" value="113550">---Accesorios</option>
-                <option id="CompraVenta-Accesorios-Billeteras" value="113552">------Billeteras</option>
-                <option id="CompraVenta-Accesorios-Bolsos" value="113553">------Bolsos</option>
-                <option id="CompraVenta-Accesorios-Canguros" value="113554">------Canguros</option>
-                <option id="CompraVenta-Accesorios-Carteras" value="113557">------Carteras</option>
-                <option id="CompraVenta-Accesorios-Maletines" value="113556">------Maletines para Portátiles</option>
-                <option id="CompraVenta-Accesorios-Morrales" value="113555">------Morrales y Tulas</option>
-
-            <option id="CompraVenta-AccesoriosVehiculos" value="113270">---Accesorios para Vehículos</option>
-                <option id="CompraVenta-AccesoriosVehiculos-Accesorios" value="113271">------Accesorios para Carros</option>
-                <option id="CompraVenta-AccesoriosVehiculos-Audio" value="113272">------Audio Carros</option>
-                <option id="CompraVenta-AccesoriosVehiculos-Faroles" value="113273">------Faroles y Luces</option>
-                <option id="CompraVenta-AccesoriosVehiculos-GPS" value="113274">------GPS</option>
-                <option id="CompraVenta-AccesoriosVehiculos-Herramientas" value="113275">------Herramientas para Carros</option>
-                <option id="CompraVenta-AccesoriosVehiculos-Llantas" value="113276">------Llantas y Rines</option>
-                <option id="CompraVenta-AccesoriosVehiculos-Musica" value="113280">------Música</option>
-                <option id="CompraVenta-AccesoriosVehiculos-Otros" value="113279">------Otros</option>
-                <option id="CompraVenta-AccesoriosVehiculos-Repuestos" value="113277">------Repuestos y Acc. Para Motos</option>
-                <option id="CompraVenta-AccesoriosVehiculos-Tuning" value="113278">------Tuning</option>
-
-            <option id="CompraVenta-AnimalesMascotas" value="113281">---Animales y Mascotas</option>
-                <option id="CompraVenta-AnimalesMascotas-Aves" value="113282">------Aves</option>
-                <option id="CompraVenta-AnimalesMascotas-Caballos" value="113283">------Caballos</option>
-                <option id="CompraVenta-AnimalesMascotas-Gatos" value="113284">------Gatos</option>
-                <option id="CompraVenta-AnimalesMascotas-Libros" value="113285">------Libros de Animales</option>
-                <option id="CompraVenta-AnimalesMascotas-Otros" value="113289">------Otros</option>
-                <option id="CompraVenta-AnimalesMascotas-Peces" value="113286">------Peces</option>
-                <option id="CompraVenta-AnimalesMascotas-Perros" value="113287">------Perros</option>
-                <option id="CompraVenta-AnimalesMascotas-Roedores" value="113288">------Roedores</option>
-
-            <option id="CompraVenta-Bebes" value="113290">---Bebés</option>
-                <option id="CompraVenta-Bebes-Alimentacion" value="113291">------Alimentación</option>
-                <option id="CompraVenta-Bebes-Bano" value="113294">------Baño, Salud e Higiene</option>
-                <option id="CompraVenta-Bebes-Caminadores" value="113295">------Caminadores</option>
-                <option id="CompraVenta-Bebes-Cargadores" value="113296">------Cargadores para Bebés</option>
-                <option id="CompraVenta-Bebes-Coches" value="113297">------Coches para Bebés</option>
-                <option id="CompraVenta-Bebes-Cuarto" value="113298">------Cuarto de Bebé</option>
-                <option id="CompraVenta-Bebes-Juguetes" value="113292">------Juguetes</option>
-                <option id="CompraVenta-Bebes-Otros" value="113304">------Otros</option>
-                <option id="CompraVenta-Bebes-Panaleras" value="113299">------Pañaleras y Pañales</option>
-                <option id="CompraVenta-Bebes-Recuerdos" value="113300">------Recuerdos</option>
-                <option id="CompraVenta-Bebes-Ropa" value="113293">------Ropa</option>
-                <option id="CompraVenta-Bebes-Seguridad" value="113301">------Seguridad</option>
-                <option id="CompraVenta-Bebes-SillasCarros" value="113302">------Sillas para Carros</option>
-                <option id="CompraVenta-Bebes-SillasComer" value="113303">------Sillas para Comer</option>
-
-            <option id="CompraVenta-Biblias" value="113482">---Biblias</option>
-                <option id="CompraVenta-Biblias-aldia" value="113483">------Biblia al Día - NBD</option>
-                <option id="CompraVenta-Biblias-antiguaversion" value="113507">------Biblia Antigua Versión</option>
-                <option id="CompraVenta-Biblias-bilingue" value="113485">------Biblia Bilingüe</option>
-                <option id="CompraVenta-Biblias-Compacta" value="113486">------Biblia Compacta</option>
-                <option id="CompraVenta-Biblias-Estudio" value="113493">------Biblia de Estudio</option>
-                <option id="CompraVenta-Biblias-Promesas" value="113491">------Biblia de Promesas</option>
-                <option id="CompraVenta-Biblias-Dioshablahoy" value="113492">------Biblia Dios Habla Hoy</option>
-                <option id="CompraVenta-Biblias-regaloimitacion" value="113506">------Biblia Edición Regalo Imitación</option>
-                <option id="CompraVenta-Biblias-ilustrada" value="113502">------Biblia Ilustrada</option>
-                <option id="CompraVenta-Biblias-lenguajeactual" value="113495">------Biblia Lenguaje Actual</option>
-                <option id="CompraVenta-Biblias-manual" value="113496">------Biblia Manual</option>
-                <option id="CompraVenta-Biblias-nuevatraduccion" value="113487">------Biblia Nueva Traducción Viviente</option>
-                <option id="CompraVenta-Biblias-reina60" value="113488">------Biblia Reina Valera 1960</option>
-                <option id="CompraVenta-Biblias-reina95" value="113505">------Biblia Reina Valera 1995</option>
-                <option id="CompraVenta-Biblias-reinacontemp" value="113503">------Biblia Reina Valera Contemporánea</option>
-                <option id="CompraVenta-Biblias-reinagomez" value="113504">------Biblia Reina Valera Gomez</option>
-                <option id="CompraVenta-Biblias-Thompson" value="113499">------Biblia Thompson</option>
-                <option id="CompraVenta-Biblias-Ultrafina" value="113498">------Biblia Ultrafina</option>
-                <option id="CompraVenta-Biblias-NVI" value="113490">------Biblia Versión Internacional - NVI</option>
-                <option id="CompraVenta-Biblias-Profecia" value="113489">------Biblias de Profecia</option>
-                <option id="CompraVenta-Biblias-Referencia" value="113484">------Biblias de Referencia</option>
-                <option id="CompraVenta-Biblias-Digitales" value="113500">------Biblias Digitales</option>
-                <option id="CompraVenta-Biblias-Electronicas" value="113501">------Biblias Electrónicas</option>
-                <option id="CompraVenta-Biblias-Ninos" value="113494">------Biblias para Niños</option>
-
-            <option id="CompraVenta-CamarasAccesorios" value="113305">---Cámaras y Accesorios</option>
-                <option id="CompraVenta-CamarasAccesorios-AccesoriosCamaras" value="113306">------Accesorios para Cámaras</option>
-                <option id="CompraVenta-CamarasAccesorios-Baterias" value="113307">------Baterías, Pilas y Cargadores</option>
-                <option id="CompraVenta-CamarasAccesorios-analogicas" value="113309">------Cámaras Analógicas</option>
-                <option id="CompraVenta-CamarasAccesorios-digitales" value="113310">------Cámaras Digitales</option>
-                <option id="CompraVenta-CamarasAccesorios-Memodigi" value="113308">------Memorias Digitales</option>
-                <option id="CompraVenta-CamarasAccesorios-telebino" value="113311">------Telescopios y Binoculares</option>
-                <option id="CompraVenta-CamarasAccesorios-videofilm" value="113312">------Videocámaras y Filmadoras</option>
-
-            <option id="CompraVenta-CelularesTelefonos" value="113313">---Celulares y Teléfonos</option>
-                <option id="CompraVenta-CelularesTelefonos-accesorios" value="113314">------Accesorios para Celulares</option>
-                <option id="CompraVenta-CelularesTelefonos-Celulares" value="113315">------Celulares</option>
-                <option id="CompraVenta-CelularesTelefonos-Memorias" value="113316">------Memorias para Celular</option>
-                <option id="CompraVenta-CelularesTelefonos-Otros" value="113322">------Otros</option>
-                <option id="CompraVenta-CelularesTelefonos-Radios" value="113317">------Radios y Handies</option>
-                <option id="CompraVenta-CelularesTelefonos-Tarificadores" value="113318">------Tarificadores y Cabinas</option>
-                <option id="CompraVenta-CelularesTelefonos-TelefoniaFija" value="113319">------Telefonía Fija</option>
-                <option id="CompraVenta-CelularesTelefonos-TelefoníaIP" value="113320">------Telefonía IP</option>
-                <option id="CompraVenta-CelularesTelefonos-TelefonosInalámbricos" value="113321">------Teléfonos Inalámbricos</option>
-
-            <option id="Coleccionables" value="113323">---Coleccionables</option>
-
-            <option id="Computacion" value="113342">---Computación</option>
-                <option id="Computacion-AccPortatiles" value="113343">------Accesorios para Portátiles</option>
-                <option id="Computacion-AgendasDigitales" value="113354">------Agendas Digitales y Accesorios</option>
-                <option id="Computacion-Apple" value="113344">------Apple</option>
-                <option id="Computacion-Cartuchos" value="113346">------Cartuchos, Toner y Tintas</option>
-                <option id="Computacion-CDs" value="113345">------CDs y DVDs Virgenes</option>
-                <option id="Computacion-CompServidores" value="113347">------Computadores y Servidores</option>
-                <option id="Computacion-DDExternos" value="113348">------Discos Duros y Externos</option>
-                <option id="Computacion-UPS" value="113349">------Fuentes, UPS y Estabilizadores</option>
-                <option id="Computacion-Impresoras" value="113350">------Impresoras</option>
-                <option id="Computacion-iPads" value="113362">------iPad y Tablets</option>
-                <option id="Computacion-MemPortatiles" value="113351">------Memorias Portátiles USB</option>
-                <option id="Computacion-MemRAM" value="113352">------Memorias RAM</option>
-                <option id="Computacion-MonVideo" value="113353">------Monitores y Video Beams</option>
-                <option id="Computacion-PartCompon" value="113355">------Partes y Componentes de PC</option>
-                <option id="Computacion-PerAccePC" value="113356">------Periféricos y Accesorios de PC</option>
-                <option id="Computacion-Portatiles" value="113357">------Portátiles</option>
-                <option id="Computacion-Quemadores" value="113358">------Quemadores DVDs y CDs</option>
-                <option id="Computacion-RedesInal" value="113359">------Redes y Redes Inalámbricas</option>
-                <option id="Computacion-Software" value="113360">------Software</option>
-                <option id="Computacion-TarvideoCapt" value="113361">------Tarjeta de Video y Captura</option>
-
-            <option id="ConsolasVideojuegos" value="113363">---Consolas y Videojuegos</option>
-                <option id="ConsolasVideojuegos-GameBoy" value="113364">------Game Boy Advance</option>
-                <option id="ConsolasVideojuegos-GameCube" value="113365">------Game Cube</option>
-                <option id="ConsolasVideojuegos-JuegosPC" value="113366">------Juegos para PC</option>
-                <option id="ConsolasVideojuegos-Wii" value="113368">------Nintendo Wii</option>
-                <option id="ConsolasVideojuegos-DS" value="113367">------Nintendos DS</option>
-                <option id="ConsolasVideojuegos-OtrasMarc" value="113375">------Otras marcas</option>
-                <option id="ConsolasVideojuegos-Play2" value="113369">------PlayStation 2 - PS2</option>
-                <option id="ConsolasVideojuegos-Play3" value="113370">------PlayStation 3 - PS3</option>
-                <option id="ConsolasVideojuegos-PlayPor" value="113371">------PlayStation Portable - PSP</option>
-                <option id="ConsolasVideojuegos-PlayVita" value="113372">------PlayStation Vita - PS Vita</option>
-                <option id="ConsolasVideojuegos-Xbox" value="113373">------Xbox</option>
-                <option id="ConsolasVideojuegos-Xbox360" value="113374">------Xbox 360</option>
-
-            <option id="DeportesFitness" value="113376">---Deportes y Fitness</option>
-                <option id="DeportesFitness-Aerobics" value="113377">------Aerobics y Fitness</option>
-                <option id="DeportesFitness-Bicicletas" value="113378">------Bicicletas y Ciclismo</option>
-                <option id="DeportesFitness-Boxeo" value="113379">------Boxeo y Artes Marciales</option>
-                <option id="DeportesFitness-Buceo" value="113380">------Buceo</option>
-                <option id="DeportesFitness-Camping" value="113381">------Camping</option>
-                <option id="DeportesFitness-Extremos" value="113382">------Deportes Extremos</option>
-                <option id="DeportesFitness-Gimnasia" value="113383">------Equipos y Máquinas de Gimnasia</option>
-                <option id="DeportesFitness-Futbol" value="113385">------Fútbol</option>
-                <option id="DeportesFitness-Golf" value="113386">------Golf</option>
-                <option id="DeportesFitness-Otros" value="113396">------Otros</option>
-                <option id="DeportesFitness-Paintball" value="113388">------Paintball y Airsoft</option>
-                <option id="DeportesFitness-Patines" value="113390">------Patines y Tennis con Patines</option>
-                <option id="DeportesFitness-Relojes" value="113391">------Relojes Deportivos</option>
-                <option id="DeportesFitness-Ropa" value="113392">------Ropa Deportiva y Accesorios</option>
-                <option id="DeportesFitness-Skateboard" value="113393">------Skateboard</option>
-                <option id="DeportesFitness-Squash" value="113394">------Tenis y Squash</option>
-                <option id="DeportesFitness-Tenis" value="113395">------Tennis y Zapatos Deportivos</option>
-
-            <option id="Electrodomesticos" value="113397">---Electrodomésticos</option>
-                <option id="Electrodomesticos-Cocina" value="113398">------Artículos de Cocina</option>
-                <option id="Electrodomesticos-Cuidado" value="113399">------Cuidado Personal</option>
-                <option id="Electrodomesticos-Theaters" value="113400">------DVDs y Home Theaters</option>
-                <option id="Electrodomesticos-Lavadoras" value="113401">------Lavadoras</option>
-                <option id="Electrodomesticos-Neveras" value="113402">------Neveras y Congeladores</option>
-                <option id="Electrodomesticos-Otros" value="113405">------Otros</option>
-                <option id="Electrodomesticos-PeqElectrodomesticos" value="113403">------Pequeños Electrodomésticos</option>
-                <option id="Electrodomesticos-LEDs" value="113404">------TVs, LCDs, LEDs y Plasmas</option>
-
-            <option id="Electronica" value="113406">---Electrónica, Audio y Video</option>
-                <option id="Electronica-Accesorios" value="113407">------Accesorios Audio y Video</option>
-                <option id="Electronica-Carros" value="113408">------Audio para Carros</option>
-                <option id="Electronica-Hogar" value="113409">------Audio para el Hogar</option>
-                <option id="Electronica-Portatil" value="113410">------Audio Portátil</option>
-                <option id="Electronica-Profesional" value="113411">------Audio Profesional</option>
-                <option id="Electronica-Calculadoras" value="113412">------Calculadoras</option>
-                <option id="Electronica-Componentes" value="113413">------Componentes Electrónicos</option>
-                <option id="Electronica-DVDs" value="113414">------DVDs y Home Theaters</option>
-                <option id="Electronica-Seguridad" value="113415">------Equipos de Seguridad</option>
-                <option id="Electronica-GPS" value="113416">------GPS</option>
-                <option id="Electronica-iPad" value="113417">------iPad y Tablets</option>
-                <option id="Electronica-iPod" value="113418">------iPod</option>
-                <option id="Electronica-Lectores" value="113419">------Lectores de Libros Digitales</option>
-                <option id="Electronica-Otros" value="113427">------Otros</option>
-                <option id="Electronica-Palms" value="113420">------Palms, Agendas y Accesorios</option>
-                <option id="Electronica-Pilas" value="113421">------Pilas, Cargadores y Baterías</option>
-                <option id="Electronica-Bluray" value="113422">------Reproductores Blu-ray</option>
-                <option id="Electronica-MP3" value="113423">------Reproductores MP3 y MP4</option>
-                <option id="Electronica-Plasmas" value="113424">------TVs, LCDs, LEDs y Plasmas</option>
-                <option id="Electronica-Beams" value="113425">------Video Beams y Pantallas</option>
-                <option id="Electronica-Videocamaras" value="113426">------Videocámaras y Filmadoras</option>
-
-            <option id="HogarMuebles" value="113428">---Hogar y Muebles</option>
-                <option id="HogarMuebles-Navidad" value="113429">------Artículos para Navidad</option>
-                <option id="HogarMuebles-Cocina" value="113430">------Cocina</option>
-                <option id="HogarMuebles-Decoracion" value="113431">------Decoración</option>
-                <option id="HogarMuebles-Dormitorio" value="113432">------Dormitorio</option>
-                <option id="HogarMuebles-Herramientas" value="113433">------Herramientas</option>
-                <option id="HogarMuebles-Muebles" value="113434">------Muebles</option>
-                <option id="HogarMuebles-Otros" value="113435">------Otros</option>
-
-            <option id="IndustriasOficinas" value="113436">---Industrias y Oficinas</option>
-                <option id="IndustriasOficinas-Equipamiento" value="113437">------Equipamiento para Oficinas</option>
-                <option id="IndustriasOficinas-Herramientas" value="113438">------Herramientas</option>
-                <option id="IndustriasOficinas-Gastronomica" value="113439">------Industria Gastronómica</option>
-                <option id="IndustriasOficinas-Textil" value="113440">------Industria Textil</option>
-                <option id="IndustriasOficinas-Muebles" value="113441">------Muebles</option>
-                <option id="IndustriasOficinas-Industrias" value="113442">------Otras Máquinas para Industrias</option>
-                <option id="IndustriasOficinas-Otros" value="113444">------Otros</option>
-                <option id="IndustriasOficinas-Seguridad" value="113443">------Seguridad para Industrias</option>
-
-            <option id="InstrumentosMusicales" value="113445">---Instrumentos Musicales</option>
-                <option id="InstrumentosMusicales-Amplificadores" value="113446">------Amplificadores</option>
-                <option id="InstrumentosMusicales-Profesional" value="113447">------Audio Profesional</option>
-                <option id="InstrumentosMusicales-Bajos" value="113448">------Bajos</option>
-                <option id="InstrumentosMusicales-Percusion" value="113449">------Baterías y Percusión</option>
-                <option id="InstrumentosMusicales-Guitarras" value="113450">------Guitarras</option>
-                <option id="InstrumentosMusicales-Viento" value="113451">------Instrumentos de Viento</option>
-                <option id="InstrumentosMusicales-Otros" value="113455">------Otros</option>
-                <option id="InstrumentosMusicales-Partituras" value="113452">------Partituras</option>
-                <option id="InstrumentosMusicales-Teclados" value="113453">------Teclados</option>
-                <option id="InstrumentosMusicales-Violines" value="113454">------Violines</option>
-
-            <option id="JuegosJuguetes" value="113456">---Juegos y Juguetes</option>
-                <option id="JuegosJuguetes-Juegos" value="113457">------Juegos</option>
-                <option id="JuegosJuguetes-AireLibre" value="113458">------Juegos al Aire Libre y Agua</option>
-                <option id="JuegosJuguetes-Juguetes" value="113459">------Juguetes</option>
-                <option id="JuegosJuguetes-Modelismo" value="113460">------Modelismo</option>
-                <option id="JuegosJuguetes-Munecos" value="113461">------Muñecos y Accesorios</option>
-                <option id="JuegosJuguetes-Otros" value="113463">------Otros</option>
-                <option id="JuegosJuguetes-Miniatura" value="113462">------Vehículos en Miniatura</option>
-
-            <option id="Libros" value="113464">---Libros</option>
-                <option id="Libros-Adoracion" value="113469">------Adoración</option>
-                <option id="Libros-Amor" value="113470">------Amor</option>
-                <option id="Libros-Apologetica" value="113471">------Apologética</option>
-                <option id="Libros-Pastoral" value="113472">------Ayuda Pastoral</option>
-                <option id="Libros-Autobiografias" value="113473">------Biografías y Autobiografías</option>
-                <option id="Libros-Carismatico" value="113474">------Carismático</option>
-                <option id="Libros-Comentarios" value="113475">------Comentarios Bíblicos</option>
-                <option id="Libros-Consejeria" value="113476">------Consejería</option>
-                <option id="Libros-CrecimientoIgle" value="113477">------Crecimiento de la Iglesia</option>
-                <option id="Libros-CrecimientoEsp" value="113466">------Crecimiento Espiritual</option>
-                <option id="Libros-Crianza" value="113478">------Crianza de Hijos</option>
-                <option id="Libros-Devocionales" value="113479">------Devocionales</option>
-                <option id="Libros-Familias" value="113480">------Familias</option>
-                <option id="Libros-Guerra" value="113468">------Guerra Espiritual</option>
-                <option id="Libros-Otros" value="113481">------Otros</option>
-                <option id="Libros-Relaciones" value="113465">------Relaciones</option>
-                <option id="Libros-VidaC" value="113467">------Vida Cristiana</option>
-
-            <option id="Musica" value="113509">---Música</option>
-                <option id="Musica-Adoracion" value="113510">------Adoración</option>
-                <option id="Musica-Alabanza" value="113511">------Alabanza</option>
-                <option id="Musica-Balada" value="113518">------Balada</option>
-                <option id="Musica-Infantil" value="113512">------Infantil</option>
-                <option id="Musica-Instrumental" value="113513">------Instrumental</option>
-                <option id="Musica-Llanera" value="113519">------Llanera</option>
-                <option id="Musica-Merengue" value="113520">------Merengue</option>
-                <option id="Musica-Pistas" value="113514">------Pistas</option>
-                <option id="Musica-Profetica" value="113515">------Profetica</option>
-                <option id="Musica-Ranchera" value="113516">------Ranchera</option>
-                <option id="Musica-Rap" value="113521">------Rap</option>
-                <option id="Musica-Reggaeton" value="113522">------Reggaeton</option>
-                <option id="Musica-Rock" value="113523">------Rock</option>
-                <option id="Musica-Salsa" value="113524">------Salsa</option>
-                <option id="Musica-Tropical" value="113525">------Tropical</option>
-                <option id="Musica-Vallenato" value="113517">------Vallenato</option>
-
-            <option id="OtrasCat" value="113616">---Otras categorías</option>
-
-            <option id="Peliculas" value="113526">---Películas</option>
-                <option id="Peliculas-Accion" value="113533">------Acción</option>
-                <option id="Peliculas-Animados" value="113527">------Animados</option>
-                <option id="Peliculas-Aventura" value="113534">------Aventura</option>
-                <option id="Peliculas-Comedias" value="113528">------Comedias</option>
-                <option id="Peliculas-Cortometraje" value="113531">------Cortometraje</option>
-                <option id="Peliculas-Documentales" value="113529">------Documentales</option>
-                <option id="Peliculas-Dramas" value="113530">------Dramas</option>
-                <option id="Peliculas-Romanticas" value="113535">------Romanticas</option>
-                <option id="Peliculas-Suspenso" value="113532">------Suspenso</option>
-
-            <option id="RelojesJoyas" value="113536">---Relojes y Joyas</option>
-                <option id="RelojesJoyas-" value="113548">------Accesorios</option>
-                <option id="RelojesJoyas-" value="113542">------Anillos</option>
-                <option id="RelojesJoyas-" value="113545">------Aretes</option>
-                <option id="RelojesJoyas-" value="113543">------Collares</option>
-                <option id="RelojesJoyas-" value="113547">------Dijes</option>
-                <option id="RelojesJoyas-" value="113546">------Fantasia</option>
-                <option id="RelojesJoyas-" value="113549">------Otras joyas</option>
-                <option id="RelojesJoyas-" value="113541">------Otros Relojes</option>
-                <option id="RelojesJoyas-" value="113544">------Pulseras</option>
-                <option id="RelojesJoyas-" value="113537">------Relojes para Hombre</option>
-                <option id="RelojesJoyas-" value="113538">------Relojes para Mujer</option>
-                <option id="RelojesJoyas-" value="113540">------Relojes para Niños</option>
-
-            <option id="RopaFemenina" value="113558">---Ropa Femenina</option>
-                <option id="RopaFemenina-Blusas" value="113559">------Blusas</option>
-                <option id="RopaFemenina-Buzos" value="113560">------Buzos</option>
-                <option id="RopaFemenina-Camisetas" value="113561">------Camisetas</option>
-                <option id="RopaFemenina-Chalecos" value="113562">------Chalecos</option>
-                <option id="RopaFemenina-Chaquetas" value="113563">------Chaquetas y Abrigos</option>
-                <option id="RopaFemenina-Gabanes" value="113564">------Gabanes</option>
-                <option id="RopaFemenina-Medias" value="113565">------Medias</option>
-                <option id="RopaFemenina-Otros" value="113572">------Otros</option>
-                <option id="RopaFemenina-Pantalones" value="113566">------Pantalones</option>
-                <option id="RopaFemenina-Pijamas" value="113567">------Pijamas</option>
-                <option id="RopaFemenina-Deportiva" value="113568">------Ropa Deportiva</option>
-                <option id="RopaFemenina-Interior" value="113569">------Ropa Interior</option>
-                <option id="RopaFemenina-Vestidos" value="113570">------Vestidos</option>
-                <option id="RopaFemenina-Bano" value="113571">------Vestidos de Baño</option>
-
-            <option id="RopaMasculina" value="113573">---Ropa Masculina</option>
-                <option id="RopaMasculina-Buzos" value="113574">------Buzos</option>
-                <option id="RopaMasculina-Camisas" value="113575">------Camisas</option>
-                <option id="RopaMasculina-Camisetas" value="113576">------Camisetas</option>
-                <option id="RopaMasculina-Chaquetas" value="113577">------Chaquetas</option>
-                <option id="RopaMasculina-Corbatas" value="113578">------Corbatas</option>
-                <option id="RopaMasculina-Correas" value="113579">------Correas y Cinturones</option>
-                <option id="RopaMasculina-Gorras" value="113580">------Gorras y Cacuchas</option>
-                <option id="RopaMasculina-Otros" value="113585">------Otros</option>
-                <option id="RopaMasculina-Pantalones" value="113581">------Pantalones y Jeans</option>
-                <option id="RopaMasculina-Deportiva" value="113582">------Ropa Deportiva</option>
-                <option id="RopaMasculina-Interior" value="113583">------Ropa Interior</option>
-                <option id="RopaMasculina-Trajes" value="113584">------Trajes</option>
-
-            <option id="RopaBebes" value="113586">---Ropa para Bebés</option>
-                <option id="RopaBebes-Accesorios" value="113587">------Accesorios</option>
-                <option id="RopaBebes-Blusas" value="113588">------Blusas</option>
-                <option id="RopaBebes-Bodys" value="113589">------Bodys</option>
-                <option id="RopaBebes-Camisetas" value="113590">------Camisetas</option>
-                <option id="RopaBebes-Chaquetas" value="113591">------Chaquetas</option>
-                <option id="RopaBebes-Conjuntos" value="113592">------Conjuntos</option>
-                <option id="RopaBebes-Otros" value="113598">------Otros</option>
-                <option id="RopaBebes-Pantalones" value="113593">------Pantalones</option>
-                <option id="RopaBebes-Pijamas" value="113594">------Pijamas</option>
-                <option id="RopaBebes-Shorts" value="113595">------Shorts</option>
-                <option id="RopaBebes-Vestidos" value="113596">------Vestidos</option>
-                <option id="RopaBebes-Zapatos" value="113597">------Zapatos</option>
-
-            <option id="RopaNinos" value="113599">---Ropa para Niños</option>
-
-            <option id="SaludBelleza" value="113606">---Salud y Belleza</option>
-                <option id="SaludBelleza-Consultorios" value="113607">------Accesorios para Consultorios</option>
-                <option id="SaludBelleza-Bucal" value="113608">------Cuidado Bucal</option>
-                <option id="SaludBelleza-Piel" value="113609">------Cuidado de la Piel</option>
-                <option id="SaludBelleza-Cabello" value="113610">------Cuidado del Cabello</option>
-                <option id="SaludBelleza-Cuerpo" value="113611">------Cuidado del Cuerpo</option>
-                <option id="SaludBelleza-Unas" value="113612">------Cuidado para Uñas</option>
-                <option id="SaludBelleza-Otros" value="113615">------Otros</option>
-                <option id="SaludBelleza-Perfumes" value="113613">------Perfumes y Fragancias</option>
-                <option id="SaludBelleza-Suplementos" value="113614">------Suplementos Alimenticios</option>
-
-            <option id="Zapatos" value="113600">---Zapatos</option>
-                <option id="Zapatos-Botas" value="113601">------Botas</option>
-                <option id="Zapatos-Otros" value="113605">------Otros</option>
-                <option id="Zapatos-Sandalias" value="113602">------Sandalias</option>
-                <option id="Zapatos-Vestir" value="113603">------Zapatos de Vestir</option>
-                <option id="Zapatos-Deportivos" value="113604">------Zapatos Deportivos</option>
-
-            <option id="Comunidad" value="112630">Comunidad</option>
-                <option id="Comunidad-Actividades" value="113700">---Actividades Comunitarias</option>
-                <option id="Comunidad-Eventos" value="113697">---Eventos</option>
-                <option id="Comunidad-Intercambio" value="113698">---Intercambio de Libros</option>
-                <option id="Comunidad-Voluntarios" value="113699">---Voluntarios</option>
-
-        <option id="Emisoras" value="112628">Emisoras</option>
-        
-        <option id="Empleo" value="14610">Empleo</option>
-            <option id="Empleo-Administrativo" value="113670">---Administrativo - Secretariado</option>
-            <option id="Empleo-Arte" value="113668">---Arte - Diseño</option>
-            <option id="Empleo-Construccion" value="113667">---Construcción - Mantenimiento</option>
-            <option id="Empleo-Contabilidad" value="113666">---Contabilidad - Finanzas</option>
-            <option id="Empleo-Direccion" value="113665">---Dirección de Empresas</option>
-            <option id="Empleo-Educacion" value="113664">---Educación - Formación</option>
-            <option id="Empleo-Hosteleria" value="113663">---Hostelería - Turismo</option>
-            <option id="Empleo-Imagen" value="113660">---Imagen - Sonido</option>
-            <option id="Empleo-Informatica" value="113661">---Informática - Multimedia</option>
-            <option id="Empleo-Ingenieria" value="113662">---Ingeniería</option>
-            <option id="Empleo-Medicina" value="113669">---Medicina</option>
-            <option id="Empleo-Otros" value="113671">---Otros</option>
-
-        <option id="OportunidadesNegocio" value="112631">Oportunidades de Negocio</option>
-
-        <option id="PeriodicosRevistas" value="112629">Periódicos y revistas</option>
-
-        <option id="Servicios" value="112627">Servicios</option>
-            <option id="Servicios-Computadoras" value="113689">---Computadoras - Reparación</option>
-            <option id="Servicios-Cuidado" value="113687">---Cuidado de ninños</option>
-            <option id="Servicios-Limpieza" value="113692">---Limpieza - Servicios Domésticos</option>
-            <option id="Servicios-Modelos" value="113688">---Modelos - Audiciones</option>
-            <option id="Servicios-Mudanzas" value="113693">---Mudanzas - Almacenaje</option>
-            <option id="Servicios-Otros" value="113696">---Otros Servicios</option>
-            <option id="Servicios-Redaccion" value="113695">---Redacción - Edición - Traducción</option>
-            <option id="Servicios-Reparaciones" value="113694">---Reparaciones</option>
-            <option id="Servicios-Belleza" value="113691">---Salud - Belleza - Figura</option>
-            <option id="Servicios-Eventos" value="113690">---Servicios para Eventos</option>
-
-        <option id="Vehiculos" value="112626">Vehículos</option>
-            <option id="Vehiculos-Aviones" value="113686">---Aviones - Avionetas</option>
-            <option id="Vehiculos-Buses" value="113683">---Buses</option>
-            <option id="Vehiculos-Camionetas" value="113682">---Camionetas</option>
-            <option id="Vehiculos-Carros" value="113680">---Carros</option>
-            <option id="Vehiculos-Colectivos" value="113684">---Colectivos - Vehículos comerciales</option>
-            <option id="Vehiculos-Embarcaciones" value="113685">---Embarcaciones</option>
-            <option id="Vehiculos-Motos" value="113681">---Motos</option>
-
-        <option id="ViajesTurismo" value="14606">Viajes - Turismo</option>
-            <option id="ViajesTurismo-Alojamiento" value="113620">---Alojamiento Temporal</option>
-            <option id="ViajesTurismo-Destinos" value="113618">---Destinos</option>
-            <option id="ViajesTurismo-Turismo" value="113621">---Guía de Turismo</option>
-            <option id="ViajesTurismo-Hoteles" value="113622">---Hoteles y Cabañas</option>
-            <option id="ViajesTurismo-Promociones" value="113617">---Promociones</option>
-            <option id="ViajesTurismo-Retiros" value="113623">---Retiros Espirituales</option>
-            <option id="ViajesTurismo-Salidas" value="113619">---Salidas Grupales</option>
-    </select>
-
-
-  <textarea  placeholder="Resumen Publicacion" name="CAT_Custom_6" id="CAT_Custom_6" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-    
-    <textarea  placeholder="Resumen Publicacion" name="CAT_Custom_6" id="CAT_Custom_6" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
-  
-    <textarea placeholder="Descripción del Anuncio" name="ItemDescription" id="ItemDescription" cols="10" rows="4" class="cat_listbox" text=""></textarea>
-
-
-</section>
-
-<section>
-    <h4>Imagenes y Video</h4>
-    <label class="imagenessubida"><strong>Imagen 1</strong><input placeholder="Imagen" type="file" name="CAT_Custom_1" id="CAT_Custom_1" class="input_file" /></label>
-    <label class="imagenessubida"><strong>Imagen 2</strong><input placeholder="Imagen 2" type="file" name="CAT_Custom_17" id="CAT_Custom_17" class="input_file"/></label>
-    <label class="imagenessubida"><strong>Imagen 3</strong><input placeholder="Imagen 3" type="file" name="CAT_Custom_18" id="CAT_Custom_18" class="input_file"/></label>
-    <label class="imagenessubida"><strong>Imagen 4</strong><input placeholder="Imagen 4" type="file" name="CAT_Custom_19" id="CAT_Custom_19" class="input_file"/></label>
-    <label class="imagenessubida"><strong>Imagen 5</strong><input placeholder="Imagen 5" type="file" name="CAT_Custom_44" id="CAT_Custom_44" class="input_file"/></label>
-    <label class="imagenessubida"><strong>Imagen 6</strong><input placeholder="Imagen 6" type="file" name="CAT_Custom_45" id="CAT_Custom_45" class="input_file"/></label>
-    <label class="imagenessubida"><strong>Imagen 7</strong><input placeholder="Imagen 7"type="file" name="CAT_Custom_46" id="CAT_Custom_46" class="input_file"/></label>
-    <label class="imagenessubida"><strong>Imagen 8</strong><input placeholder="Imagen 8"type="file" name="CAT_Custom_47" id="CAT_Custom_47" class="input_file"/></label>
-    <label class="imagenessubida"><strong>Imagen 9</strong><input placeholder="Imagen 9"type="file" name="CAT_Custom_48" id="CAT_Custom_48" class="input_file"/></label>
-    <label class="imagenessubida"><strong>Imagen 10</strong><input placeholder="Imagen 10" type="file" name="CAT_Custom_49" id="CAT_Custom_49" class="input_file"/></label>
-    <label class="videosubida"><strong>Video</strong><br /><input placeholder="Código video YouTube" type="text" maxlength="4000" name="CAT_Custom_20" id="CAT_Custom_20" class="codigo_video_youtube"/></label>
-</section>
-
-<section>
-    <h4>Precio</h4>
-    <input placeholder="Precio (solo números)" type="text" maxlength="255" name="CAT_Custom_2" id="CAT_Custom_2" class="input_comc"/>
-    <input placeholder="Precio Antes (Solo números)" type="text" maxlength="255" name="CAT_Custom_3" id="CAT_Custom_3" class="input_comc"/>
-</section>
-
-<section>
-    <h4>Condición</h4>
-    <select name="CAT_Custom_15" id="CAT_Custom_15" class="cat_dropdown">
-      <option value=" ">  Estado  </option>
-      <option value="Nuevo">Nuevo</option>
-      <option value="Usado">Usado</option>
-    </select>
-</section>
-
-<section>
-    <h4>Medios de Pago</h4>    
-    <div><label><input type="checkbox" class="input_comc" name="CAT_Custom_83" id="CAT_Custom_83_0" value="Efectivo contra entrega"/> Efectivo contra entrega</label></div>
-    <div><label><input type="checkbox" class="input_comc" name="CAT_Custom_83" id="CAT_Custom_83_1" value="Tarjeta Crédito"/> Tarjeta Crédito</label></div>
-    <div><label><input type="checkbox" class="input_comc" name="CAT_Custom_83" id="CAT_Custom_83_2" value="Deposito"/> Deposito</label></div>
-</section>
-
-<section>
-    <h4>Garantía</h4>
-    <input placeholder="Garantía" type="text" maxlength="4000" name="CAT_Custom_85" id="CAT_Custom_85" class="input_comc"/>
-</section>
-
-<section>
-    <h4>Envío</h4>
-    <div><label><input type="checkbox" class="input_comc" name="CAT_Custom_84" id="CAT_Custom_84_0" value="Contra entrega"/> Contra entrega</label></div>
-    <div><label><input type="checkbox" class="input_comc" name="CAT_Custom_84" id="CAT_Custom_84_1" value="Retiro en punto de venta"/> Retiro en punto de venta</label></div>
-    <div><label><input type="checkbox" class="input_comc" name="CAT_Custom_84" id="CAT_Custom_84_2" value="Se realizan envíos"/> Se realizan envíos</label></div>
-</section>
-
-<section>
-    <h4>Palabra</h4>
-    <input placeholder="Número del versículo" type="text" maxlength="4000" name="CAT_Custom_42" id="CAT_Custom_42" class="input_comc" />
-    <input placeholder="Texto del versículo" type="text" maxlength="4000" name="CAT_Custom_43" id="CAT_Custom_43" class="input_comc" />    
-</section>
-
-<section>
-    <h4>Ubicación</h4>
-    <input placeholder="Departamento" type="text" maxlength="4000" name="CAT_Custom_21" id="CAT_Custom_21" class="input_comc" />
-
-    <select name="CAT_Custom_14" id="CAT_Custom_14" class="cat_dropdown">
-      <option value=" ">  Ciudad  </option>
-      <option value="Bogota">Bogota</option>
-      <option value="Medellin">Medellin</option>
-      <option value="Cali">Cali</option>
-      <option value="Barranquilla">Barranquilla</option>
-      <option value="Cartagena">Cartagena</option>
-      <option value="Cucuta">Cucuta</option>
-      <option value="Soledad">Soledad</option>
-      <option value="Ibague">Ibague</option>
-      <option value="Bucaramanga">Bucaramanga</option>
-      <option value="Soacha">Soacha</option>
-      <option value="Santa_Marta">Santa_Marta</option>
-      <option value="Villavicencio">Villavicencio</option>
-      <option value="Pereira">Pereira</option>
-      <option value="Bello">Bello</option>
-      <option value="Valledupar">Valledupar</option>
-      <option value="Monteria">Monteria</option>
-      <option value="Pasto">Pasto</option>
-      <option value="Manizales">Manizales</option>
-      <option value="Buenaventura">Buenaventura</option>
-      <option value="Neiva">Neiva</option>
-      <option value="Palmira">Palmira</option>
-      <option value="Armenia">Armenia</option>
-      <option value="Popayan">Popayan</option>
-      <option value="Sincelejo">Sincelejo</option>
-      <option value="Itagui">Itagui</option>
-      <option value="Floridablanca">Floridablanca</option>
-      <option value="Riohacha">Riohacha</option>
-      <option value="Envigado">Envigado</option>
-      <option value="Tulua">Tulua</option>
-      <option value="Dosquebradas">Dosquebradas</option>
-      <option value="San_Andres_de_Tumaco">San_Andres_de_Tumaco</option>
-      <option value="Barrancabermeja">Barrancabermeja</option>
-      <option value="Tunja">Tunja</option>
-      <option value="Giron">Giron</option>
-      <option value="Apartado">Apartado</option>
-      <option value="Florencia">Florencia</option>
-      <option value="Uribia">Uribia</option>
-      <option value="Turbo">Turbo</option>
-      <option value="Maicao">Maicao</option>
-      <option value="Piedecuesta">Piedecuesta</option>
-      <option value="Yopal">Yopal</option>
-      <option value="Ipiales">Ipiales</option>
-      <option value="Fusagasuga">Fusagasuga</option>
-      <option value="Cartago">Cartago</option>
-      <option value="Facatativa">Facatativa</option>
-      <option value="Chia">Chia</option>
-      <option value="Magangue">Magangue</option>
-      <option value="Pitalito">Pitalito</option>
-      <option value="Caucasia">Caucasia</option>
-      <option value="Zipaquira">Zipaquira</option>
-      <option value="Malambo">Malambo</option>
-      <option value="Rionegro">Rionegro</option>
-      <option value="Lorica">Lorica</option>
-      <option value="Jamundi">Jamundi</option>
-      <option value="Quibdo">Quibdo</option>
-      <option value="Guadalajara_de_Buga">Guadalajara_de_Buga</option>
-      <option value="Yumbo">Yumbo</option>
-      <option value="Sogamoso">Sogamoso</option>
-      <option value="Duitama">Duitama</option>
-      <option value="Girardot">Girardot</option>
-      <option value="Cienaga">Cienaga</option>
-      <option value="Manaure">Manaure</option>
-      <option value="Tierralta">Tierralta</option>
-      <option value="Ocana">Ocana</option>
-      <option value="Sabanalarga">Sabanalarga</option>
-      <option value="Santander_de_Quilichao">Santander_de_Quilichao</option>
-      <option value="Aguachica">Aguachica</option>
-      <option value="Cerete">Cerete</option>
-      <option value="Sahagún">Sahagún</option>
-      <option value="Arauca">Arauca</option>
-      <option value="Villa_del_Rosario">Villa_del_Rosario</option>
-      <option value="Garzon">Garzon</option>
-      <option value="Mosquera">Mosquera</option>
-      <option value="Candelaria">Candelaria</option>
-      <option value="Montelibano">Montelibano</option>
-      <option value="Calarca">Calarca</option>
-      <option value="Caldas">Caldas</option>
-      <option value="La_Dorada">La_Dorada</option>
-      <option value="El_Espinal">El_Espinal</option>
-      <option value="Madrid">Madrid</option>
-      <option value="Los_Patios">Los_Patios</option>
-      <option value="Chigorodo">Chigorodo</option>
-      <option value="El_Carmen_de_Bolivar">El_Carmen_de_Bolivar</option>
-      <option value="Funza">Funza</option>
-      <option value="Santa_Rosa_de_Cabal">Santa_Rosa_de_Cabal</option>
-      <option value="Arjona">Arjona</option>
-      <option value="Turbaco">Turbaco</option>
-      <option value="San_Andres">San_Andres</option>
-      <option value="Copacabana">Copacabana</option>
-      <option value="Acacias">Acacias</option>
-      <option value="San_Vicente_del_Caguan">San_Vicente_del_Caguan</option>
-      <option value="Planeta_Rica">Planeta_Rica</option>
-      <option value="Chiquinquira">Chiquinquira</option>
-      <option value="San_Jose_del_Guaviare">San_Jose_del_Guaviare</option>
-      <option value="Cienaga_de_Oro">Cienaga_de_Oro</option>
-      <option value="Corozal">Corozal</option>
-      <option value="La_Plata">La_Plata</option>
-      <option value="La_Estrella">La_Estrella</option>
-      <option value="Granada">Granada</option>
-      <option value="Riosucio">Riosucio</option>
-      <option value="Necocli">Necocli</option>
-      <option value="Zona_Bananera">Zona_Bananera</option>
-      <option value="Puerto_Asis">Puerto_Asis</option>
-      <option value="Florida">Florida</option>
-      <option value="Fundacion">Fundacion</option>
-      <option value="Baranoa">Baranoa</option>
-      <option value="El_Cerrito">El_Cerrito</option>
-      <option value="Pamplona">Pamplona</option>
-      <option value="Plato">Plato</option>
-      <option value="San_Marcos">San_Marcos</option>
-      <option value="Cajica">Cajica</option>
-      <option value="El_Banco">El_Banco</option>
-      <option value="Villamaria">Villamaria</option>
-      <option value="Puerto_Boyaca">Puerto_Boyaca</option>
-      <option value="Pradera">Pradera</option>
-      <option value="Carepa">Carepa</option>
-      <option value="Girardota">Girardota</option>
-      <option value="Marinilla">Marinilla</option>
-      <option value="Tame">Tame</option>
-      <option value="La_Ceja">La_Ceja</option>
-      <option value="Chinchina">Chinchina</option>
-      <option value="Orito">Orito</option>
-      <option value="Valle_del_Guamuez">Valle_del_Guamuez</option>
-      <option value="Agustin_Codazzi">Agustin_Codazzi</option>
-      <option value="Sabaneta">Sabaneta</option>
-      <option value="Ayapel">Ayapel</option>
-    </select>
-
-    <input placeholder="Barrio" type="text" maxlength="4000" name="CAT_Custom_22" id="CAT_Custom_22" class="input_comc" />
-    <input placeholder="Dirección" type="text" maxlength="4000" name="CAT_Custom_23" id="CAT_Custom_23" class="input_comc" />
-
-</section>
-
-<section>
-    <h4>Información de Contácto</h4>
-    <input placeholder="Teléfono de Contácto" type="text" maxlength="255" name="CAT_Custom_24" id="CAT_Custom_24" class="input_comc" />
-    <input placeholder="Celular" type="text" maxlength="255" name="CAT_Custom_25" id="CAT_Custom_25" class="input_comc" />
-    <input placeholder="Sitio Web" type="text" maxlength="4000" name="CAT_Custom_53" id="CAT_Custom_53" class="input_comc" />
-</section>
-
-<!-- Bienes Raices
-****************************************************************************************************************************************
-****************************************************************************************************************************************
- -->
-<section class="data_BienesRaices">
-    <h4>Características Inmueble</h4>
-    <input placeholder="Metros Construidos" type="text" maxlength="255" name="CAT_Custom_26" id="CAT_Custom_26" class="input_comc" />
-    <input placeholder="Metros Terreno" type="text" maxlength="255" name="CAT_Custom_27" id="CAT_Custom_27" class="input_comc" />
-    <input placeholder="Años de construido" type="text" maxlength="255" name="CAT_Custom_28" id="CAT_Custom_28" class="input_comc" />
-
-    <select name="CAT_Custom_29" id="CAT_Custom_29" class="cat_dropdown">
-      <option value=" ">  Baños  </option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="Mas de 10">Mas de 10</option>
-    </select>
-
-    <select name="CAT_Custom_30" id="CAT_Custom_30" class="cat_dropdown">
-      <option value=" ">  Habitaciones  </option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="Mas de 10">Mas de 10</option>
-    </select>
-
-    <select name="CAT_Custom_31" id="CAT_Custom_31" class="cat_dropdown">
-      <option value=" ">  Pisos (Cuartos)  </option>
-      <option value="Alfombra">Alfombra</option>
-      <option value="Cemento">Cemento</option>
-      <option value="Cerámica">Cerámica</option>
-      <option value="Granito">Granito</option>
-      <option value="Madera">Madera</option>
-      <option value="Marmol">Marmol</option>
-      <option value="Parquet">Parquet</option>
-      <option value="Rustico">Rustico</option>
-      <option value="Varios">Varios</option>
-    </select>
-
-    <select name="CAT_Custom_32" id="CAT_Custom_32" class="cat_dropdown">
-      <option value=" ">  Lineas Telefónicas  </option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="Más de 3">Más de 3</option>
-    </select>
-
-    <select name="CAT_Custom_33" id="CAT_Custom_33" class="cat_dropdown">
-      <option value=" ">  Pisos (areas sociales)  </option>
-      <option value="Alfombra">Alfombra</option>
-      <option value="Cemento">Cemento</option>
-      <option value="Cerámica">Cerámica</option>
-      <option value="Granito">Granito</option>
-      <option value="Madera">Madera</option>
-      <option value="Marmol">Marmol</option>
-      <option value="Parquet">Parquet</option>
-      <option value="Rustico">Rustico</option>
-      <option value="Varios">Varios</option>
-    </select>
-
-    <select name="CAT_Custom_34" id="CAT_Custom_34" class="cat_dropdown">
-      <option value=" ">  Estrato  </option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="No tiene">No tiene</option>
-    </select>
-
-    <input placeholder="Nombre del Inmueble" type="text" maxlength="4000" name="CAT_Custom_35" id="CAT_Custom_35" class="input_comc" />
-
-    <select name="CAT_Custom_36" id="CAT_Custom_36" class="cat_dropdown">
-      <option value=" ">  Habitaciones de servicio  </option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="Más de 3">Más de 3</option>
-    </select>
-
-    <select name="CAT_Custom_37" id="CAT_Custom_37" class="cat_dropdown">
-      <option value=" ">  Ascensores  </option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="Más de 3">Más de 3</option>
-      <option value="No tiene">No tiene</option>
-    </select>
-
-    <select name="CAT_Custom_38" id="CAT_Custom_38" class="cat_dropdown">
-      <option value=" ">  ¿Negociable?  </option>
-      <option value="Si">Si</option>
-      <option value="No">No</option>
-    </select>
-</section>
-
-<section class="data_BienesRaices">
-    <h4>Características Adicionales</h4>
-    <div><label><input type="checkbox" value="Holaaaaa" name="CAT_Custom_39" id="CAT_Custom_39_0" value="Aire acondicionado"/> Aire acondicionado</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_1" value="Calefacción o Chimenea"/> Calefacción o Chimenea</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_2" value="Cocina Integral"/> Cocina Integral</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_3" value="Estacionamiento de visitantes"/> Estacionamiento de visitantes</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_4" value="Estudio / Biblioteca"/> Estudio / Biblioteca</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_5" value="Jacuzzi"/> Jacuzzi</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_6" value="Planta eléctrica"/> Planta eléctrica</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_7" value="Rejas de seguridad"/> Rejas de seguridad</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_8" value="Sauna"/> Sauna</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_9" value="TV por cable"/> TV por cable</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_10" value="Vestier"/> Vestier</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_11" value="Vista panorámica"/> Vista panorámica</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_12" value="Gas Natural"/> Gas Natural</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_13" value="Vialidad interna"/> Vialidad interna</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_14" value="Balcón"/> Balcón</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_15" value="Depósito"/> Depósito</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_16" value="Gimnasio"/> Gimnasio</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_17" value="Patio"/> Patio</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_18" value="Agua"/> Agua</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_19" value="Riego"/> Riego</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_20" value="Estar"/> Estar</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_21" value="Electricidad"/> Electricidad</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_22" value="Cercado"/> Cercado</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_23" value="Garaje"/> Garaje</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_24" value="Piscina"/> Piscina</label></div>
-</section>
-
-<section class="data_BienesRaices">
-    <h4>Cercanías a menos de dos cuadras</h4>
-    <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_0" value="Estación de metro"/> Estación de metro</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_1" value="Panaderia"/> Panaderia</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_2" value="Centro comercial"/> Centro comercial</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_3" value="Droguería"/> Droguería</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_4" value="Supermercado"/> Supermercado</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_5" value="Colegio"/> Colegio</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_6" value="Otros negocios"/> Otros negocios</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_7" value="Alimentador o Transmilenio"/> Alimentador o Transmilenio</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_8" value="Minimercado"/> Minimercado</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_9" value="Parque"/> Parque</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_10" value="Hospital"/> Hospital</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_11" value="Universidad"/> Universidad</label></div>
-</section>
-
-<section class="data_BienesRaices">
-    <h4>Instalaciones y Comodidades</h4>
-    <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_0" value="Area de BBQ"/> Area de BBQ</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_1" value="Caminerías"/> Caminerías</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_2" value="Jardines"/> Jardines</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_3" value="Salon de Fiesta"/> Salon de Fiesta</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_4" value="Escalera de Emergencia"/> Escalera de Emergencia</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_5" value="Circuito Cerrado de TV"/> Circuito Cerrado de TV</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_6" value="Conjunto Cerrado"/> Conjunto Cerrado</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_7" value="Parque infantil"/> Parque infantil</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_8" value="Vigilancia privada"/> Vigilancia privada</label></div>
-</section>
-
-<!-- Vehiculos
-****************************************************************************************************************************************
-****************************************************************************************************************************************
- -->
-
-<section class="data_Vehiculos">
-    <h4>Describe tu vehículo</h4>
-    <select name="CAT_Custom_54" id="CAT_Custom_54" class="cat_dropdown">
-      <option value=" ">  Transmisión  </option>
-      <option value="Automática">Automática</option>
-      <option value="Mecánica">Mecánica</option>
-    </select>
-
-    <select name="CAT_Custom_55" id="CAT_Custom_55" class="cat_dropdown">
-      <option value=" ">  Tipo Dirección  </option>
-      <option value="Asistida">Asistida</option>
-      <option value="Hidráulica">Hidráulica</option>
-      <option value="Mecánica">Mecánica</option>
-    </select>
-
-    <select name="CAT_Custom_56" id="CAT_Custom_56" class="cat_dropdown">
-      <option value=" ">  Color  </option>
-      <option value="Amarillo">Amarillo</option>
-      <option value="Anaranjado">Anaranjado</option>
-      <option value="Beige">Beige</option>
-      <option value="Blanco">Blanco</option>
-      <option value="Crema">Crema</option>
-      <option value="Dorado">Dorado</option>
-      <option value="Gris">Gris</option>
-      <option value="Marrón">Marrón</option>
-      <option value="Morado">Morado</option>
-      <option value="Negro">Negro</option>
-      <option value="Plateado">Plateado</option>
-      <option value="Rojo">Rojo</option>
-      <option value="Verde">Verde</option>
-      <option value="Vinotinto">Vinotinto</option>
-      <option value="Otro">Otro</option>
-    </select>
-
-    <input placeholder="Recorrido" type="text" maxlength="4000" name="CAT_Custom_57" id="CAT_Custom_57" class="input_comc" />
-
-    <input placeholder="Placa" type="text" maxlength="4000" name="CAT_Custom_58" id="CAT_Custom_58" class="input_comc" />
-
-    <input placeholder="Vidrios" type="text" maxlength="4000" name="CAT_Custom_59" id="CAT_Custom_59" class="input_comc" />
-
-    <select name="CAT_Custom_60" id="CAT_Custom_60" class="cat_dropdown">
-      <option value=" ">  Aire Acondicionado  </option>
-      <option value="Si">Si</option>
-      <option value="No">No</option>
-    </select>
-
-    <select name="CAT_Custom_62" id="CAT_Custom_62" class="cat_dropdown">
-      <option value=" ">  Asientos  </option>
-      <option value="Tela">Tela</option>
-      <option value="Cuero">Cuero</option>
-      <option value="Semi-cuero">Semi-cuero</option>
-    </select>
-
-    <select name="CAT_Custom_63" id="CAT_Custom_63" class="cat_dropdown">
-      <option value=" ">Año</option>
-      <option value="2015">2015</option>
-      <option value="2014">2014</option>
-      <option value="2013">2013</option>
-      <option value="2012">2012</option>
-      <option value="2011">2011</option>
-      <option value="2010">2010</option>
-      <option value="2009">2009</option>
-      <option value="2008">2008</option>
-      <option value="2007">2007</option>
-      <option value="2006">2006</option>
-      <option value="2005">2005</option>
-      <option value="2004">2004</option>
-      <option value="2003">2003</option>
-      <option value="2002">2002</option>
-      <option value="2001">2001</option>
-      <option value="2000">2000</option>
-      <option value="1999">1999</option>
-      <option value="1998">1998</option>
-      <option value="1997">1997</option>
-      <option value="1996">1996</option>
-      <option value="1995">1995</option>
-      <option value="1994">1994</option>
-      <option value="1993">1993</option>
-      <option value="1992">1992</option>
-      <option value="1991">1991</option>
-      <option value="1990">1990</option>
-      <option value="1989">1989</option>
-      <option value="1988">1988</option>
-      <option value="1987">1987</option>
-      <option value="1986">1986</option>
-      <option value="1985">1985</option>
-      <option value="1984">1984</option>
-      <option value="1983">1983</option>
-      <option value="1982">1982</option>
-      <option value="1981">1981</option>
-      <option value="1980">1980</option>
-      <option value="1979">1979</option>
-      <option value="1978">1978</option>
-      <option value="1977">1977</option>
-      <option value="1976">1976</option>
-      <option value="1975">1975</option>
-      <option value="1974">1974</option>
-      <option value="1973">1973</option>
-      <option value="1972">1972</option>
-      <option value="1971">1971</option>
-      <option value="1970">1970</option>
-      <option value="1969">1969</option>
-      <option value="1968">1968</option>
-      <option value="1967">1967</option>
-      <option value="1966">1966</option>
-      <option value="1965">1965</option>
-      <option value="1964">1964</option>
-      <option value="1963">1963</option>
-      <option value="1962">1962</option>
-      <option value="1961">1961</option>
-      <option value="1960">1960</option>
-      <option value="1959">1959</option>
-      <option value="1958">1958</option>
-      <option value="1957">1957</option>
-      <option value="1956">1956</option>
-      <option value="1955">1955</option>
-      <option value="1954">1954</option>
-      <option value="1953">1953</option>
-      <option value="1952">1952</option>
-      <option value="1951">1951</option>
-      <option value="1950">1950</option>
-      <option value="1949">1949</option>
-      <option value="1948">1948</option>
-      <option value="1947">1947</option>
-      <option value="1946">1946</option>
-      <option value="1945">1945</option>
-      <option value="1944">1944</option>
-      <option value="1943">1943</option>
-      <option value="1942">1942</option>
-      <option value="1941">1941</option>
-      <option value="1940">1940</option>
-      <option value="1939">1939</option>
-      <option value="1938">1938</option>
-      <option value="1937">1937</option>
-      <option value="1936">1936</option>
-      <option value="1935">1935</option>
-      <option value="1934">1934</option>
-      <option value="1933">1933</option>
-      <option value="1932">1932</option>
-      <option value="1931">1931</option>
-      <option value="1930">1930</option>
-      <option value="1929">1929</option>
-      <option value="1928">1928</option>
-      <option value="1927">1927</option>
-      <option value="1926">1926</option>
-      <option value="1925">1925</option>
-      <option value="1924">1924</option>
-      <option value="1923">1923</option>
-      <option value="1922">1922</option>
-      <option value="1921">1921</option>
-      <option value="1920">1920</option>
-      <option value="1919">1919</option>
-      <option value="1918">1918</option>
-      <option value="1917">1917</option>
-      <option value="1916">1916</option>
-      <option value="1915">1915</option>
-      <option value="1914">1914</option>
-      <option value="1913">1913</option>
-      <option value="1912">1912</option>
-      <option value="1911">1911</option>
-      <option value="1910">1910</option>
-      <option value="1909">1909</option>
-      <option value="1908">1908</option>
-      <option value="1907">1907</option>
-      <option value="1906">1906</option>
-      <option value="1905">1905</option>
-      <option value="1904">1904</option>
-      <option value="1903">1903</option>
-      <option value="1902">1902</option>
-      <option value="1901">1901</option>
-    </select>
-
-    <input placeholder="Versión" type="text" maxlength="4000" name="CAT_Custom_64" id="CAT_Custom_64" class="input_comc" />
-
-    <select name="CAT_Custom_65" id="CAT_Custom_65" class="cat_dropdown">
-      <option value=" ">  ¿Motor recién reparado?  </option>
-      <option value="Si">Si</option>
-      <option value="No">No</option>
-    </select>
-
-    <input placeholder="Número de cilindros" type="text" maxlength="255" name="CAT_Custom_66" id="CAT_Custom_66" class="input_comc" />
-
-    <select name="CAT_Custom_67" id="CAT_Custom_67" class="cat_dropdown">
-      <option value=" ">  ¿Único Dueño?  </option>
-      <option value="Si">Si</option>
-      <option value="No">No</option>
-    </select>
-
-    <select name="CAT_Custom_68" id="CAT_Custom_68" class="cat_dropdown">
-      <option value=" ">  ¿Airbag?  </option>
-      <option value="Si">Si</option>
-      <option value="No">No</option>
-    </select>
-
-    <select name="CAT_Custom_69" id="CAT_Custom_69" class="cat_dropdown">
-      <option value=" ">  Tipo de Combustible  </option>
-      <option value="Gasolina">Gasolina</option>
-      <option value="Gasolina y Gas">Gasolina y Gas</option>
-      <option value="Diesel">Diesel</option>
-    </select>
-
-    <select name="CAT_Custom_70" id="CAT_Custom_70" class="cat_dropdown">
-      <option value=" ">  Frenos ABS  </option>
-      <option value="Si">Si</option>
-      <option value="No">No</option>
-    </select>
-
-    <select name="CAT_Custom_71" id="CAT_Custom_71" class="cat_dropdown">
-      <option value=" ">  Rep. Sonido  </option>
-      <option value="R/Rep">R/Rep</option>
-      <option value="CD">CD</option>
-      <option value="MP3">MP3</option>
-      <option value="No">No</option>
-    </select>
-
-    <select name="CAT_Custom_72" id="CAT_Custom_72" class="cat_dropdown">
-      <option value=" ">  Campero  </option>
-      <option value="4x2">4x2</option>
-      <option value="4x4">4x4</option>
-    </select>
-
-    <input placeholder="Motor" type="text" maxlength="4000" name="CAT_Custom_73" id="CAT_Custom_73" class="input_comc" />
-
-    <select name="CAT_Custom_74" id="CAT_Custom_74" class="cat_dropdown">
-      <option value=" ">  Doy financiamiento  </option>
-      <option value="Si">Si</option>
-      <option value="No">No</option>
-    </select>
-</section>
-
-<section class="data_Vehiculos">
-    <h4>Seguridad</h4>
-    <div><label><input type="checkbox" name="CAT_Custom_75" id="CAT_Custom_75_0" value="Rastreo satelital"/> Rastreo satelital</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_75" id="CAT_Custom_75_1" value="Alarma con control"/> Alarma con control</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_75" id="CAT_Custom_75_2" value="Asegurado"/> Asegurado</label></div>
-</section>
-
-<section class="data_Vehiculos">
-    <h4>Sonido</h4>
-    <div><label><input type="checkbox" name="CAT_Custom_76" id="CAT_Custom_76_0" value="Sub-Buffer (Bajos)"/> Sub-Buffer (Bajos)</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_76" id="CAT_Custom_76_1" value="Planta"/> Planta</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_76" id="CAT_Custom_76_2" value="Caja de CD's"/> Caja de CD's</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_76" id="CAT_Custom_76_3" value="DVD" /> DVD</label></div>
-</section>
-
-<section class="data_Vehiculos">
-    <h4>Exterior</h4>
-    <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_0" value="Llantas nuevas"/> Llantas nuevas</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_1" value="Revision tecnomecánica"/> Revision tecnomecánica</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_2" value="Forro llanta de repuesto"/> Forro llanta de repuesto</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_3" value="Película de Seguridad"/> Película de Seguridad</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_4" value="Rines de lujo"/> Rines de lujo</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_5" value="Luces anti niebla"/> Luces anti niebla</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_6" value="Retrovisores eléctricos"/> Retrovisores eléctricos</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_7" value="Estribos"/> Estribos</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_8" value="Sun Roof (Quemacoco)"/> Sun Roof (Quemacoco)</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_9" value="Spoiler"/> Spoiler</label></div>
-</section>
-
-<section class="data_Vehiculos"> 
-    <h4>Accesorios Internos</h4>
-    <div><label><input type="checkbox" name="CAT_Custom_78" id="CAT_Custom_78_0" value="Forro del volante"/> Forro del volante</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_78" id="CAT_Custom_78_1" value="Forros de asientos"/> Forros de asientos</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_78" id="CAT_Custom_78_2" value="Volante deportivo"/> Volante deportivo</label></div>
-    <div><label><input type="checkbox" name="CAT_Custom_78" id="CAT_Custom_78_3" value="Bloqueo central"/> Bloqueo central</label></div>
-</section>
-
-<!-- Compra-Venta
-****************************************************************************************************************************************
-****************************************************************************************************************************************
- -->
-<section class="data_CompraVenta">
-    <h4>Talla y Color</h4>
-
-    <input placeholder="Talla" type="text" maxlength="4000" name="CAT_Custom_80" id="CAT_Custom_80" class="input_comc" />
-    <input placeholder="Color" type="text" maxlength="4000" name="CAT_Custom_81" id="CAT_Custom_81" class="input_comc" />
-    <input  placeholder="Cantidad" type="text" maxlength="255" name="CAT_Custom_82" id="CAT_Custom_82" class="input_comc" />
-</section>
-
-<section class="data_CompraVenta">
-    <h4>Este producto se vende en</h4>
-
-    <input placeholder="Nombre Tienda" type="text" maxlength="4000" name="CAT_Custom_100" id="CAT_Custom_100" class="input_comc"  />
-    <input placeholder="Dirección Tienda" type="text" maxlength="4000" name="CAT_Custom_101" id="CAT_Custom_101" class="input_comc"  />
-    <input placeholder="Teléfono Tienda" type="text" maxlength="4000" name="CAT_Custom_102" id="CAT_Custom_102" class="input_comc"  />
-</section>
-
-<!-- Empleo
-****************************************************************************************************************************************
-****************************************************************************************************************************************
- -->
-
-<section class="data_Empleo">
-    <h4>Descripción Vacante</h4>
-    <input placeholder="Salario" type="text" maxlength="4000" name="CAT_Custom_86" id="CAT_Custom_86" class="input_comc" />
-
-    <select name="CAT_Custom_87" id="CAT_Custom_87" class="cat_dropdown">
-      <option value=" ">  Tipo de contrato  </option>
-      <option value="Termino fijo">Termino fijo</option>
-      <option value="Indefinido">Indefinido</option>
-    </select>
-
-    <select name="CAT_Custom_88" id="CAT_Custom_88" class="cat_dropdown">
-      <option value=" ">  Tipo de trabajo  </option>
-      <option value="Tiempo completo">Tiempo completo</option>
-      <option value="Medio tiempo">Medio tiempo</option>
-      <option value="Por horas">Por horas</option>
-      <option value="Temporal">Temporal</option>
-      <option value="Beca / Prácticas">Beca / Prácticas</option>
-      <option value="Desde casa">Desde casa</option>
-    </select>
-
-
-    <input placeholder="Empresa" type="text" maxlength="4000" name="CAT_Custom_89" id="CAT_Custom_89" class="input_comc" />
-
-    <input placeholder="Nombre Contacto" type="text" maxlength="4000" name="CAT_Custom_90" id="CAT_Custom_90" class="input_comc" />
-
-    <input placeholder="Email" type="text" maxlength="4000" name="CAT_Custom_91" id="CAT_Custom_91" class="input_comc" />
-</section>
-
-<!-- Aplicaciones
-****************************************************************************************************************************************
-****************************************************************************************************************************************
- -->
-<section class="data_Aplicaciones">
-    <h4>Descripción Aplicación</h4>
-    <input placeholder="Version" type="text" maxlength="4000" name="CAT_Custom_92" id="CAT_Custom_92" class="input_comc" />
-
-    <input placeholder="URL Descarga" type="text" maxlength="4000" name="CAT_Custom_93" id="CAT_Custom_93" class="input_comc" />
-
-    <input placeholder="Requisitos" type="text" maxlength="4000" name="CAT_Custom_94" id="CAT_Custom_94" class="input_comc" />
-
-    <input placeholder="Tamaño" type="text" maxlength="4000" name="CAT_Custom_95" id="CAT_Custom_95" class="input_comc" />
-</section>
-
-<!-- Botón
-****************************************************************************************************************************************
-****************************************************************************************************************************************
- -->
-
-<aside class="contenedor_boton_enviar_publicaciones">
-    <button class="boton_amarillo" type="submit" id="catcustomcontentbutton">Publicar</button>
-</aside>
-
-<!-- Ocultos
-****************************************************************************************************************************************
-****************************************************************************************************************************************
- -->
-<section style="display:non;">
-    <select name="CAT_Custom_5" id="CAT_Custom_5" class="cat_dropdown">
-        <option value=" ">  Anunciante  </option>
-        <option value="4240711">Camilo Suluaga</option>
-        <option value="4240528">Pedro Paredes</option>
-        <option value="4240527">Pepito Perez</option>
-    </select>
-    
-        
-    
-    <select name="CAT_Custom_103" id="CAT_Custom_103" class="cat_dropdown">
-        <option value=" ">  Código Categoría  </option>
-        <option value="Bienes-Raices">Bienes-Raices</option>
-        <option value="Vehiculos">Vehiculos</option>
-        <option value="Compra-Venta">Compra-Venta</option>
-        <option value="Empleo">Empleo</option>
-        <option value="Aplicaciones">Aplicaciones</option>
-        <option value="Viajes-Turismo">Viajes-Turismo</option>
-        <option value="Servicios">Servicios</option>
-        <option value="Emisoras">Emisoras</option>
-        <option value="Oportunidades-Negocio">Oportunidades-Negocio</option>
-        <option value="Periodicos-Revistas">Periodicos-Revistas</option>
-        <option value="Clases-Cursos">Clases-Cursos</option>
-    </select>
-    
-    <input placeholder="Subcategoria" type="text" maxlength="4000" name="CAT_Custom_98" id="CAT_Custom_98" class="input_comc" />
-
-</section>
+    <form class="formularioPublicacionPublicaciones" name="catcustomcontentform7432" onsubmit="return checkWholeForm7432(this)" enctype="multipart/form-data" method="post" action="/CustomContentProcess.aspx?CCID=16641&OID={module_oid}&OTYPE={module_otype}">
+
+            <!-- Ocultos **************************************************************** -->
+            <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+            
+        <section style="display:non;">
+            <select name="CAT_Custom_5" id="CAT_Custom_5" class="cat_dropdown">
+                <option value=" ">  Anunciante  </option>
+                <option value="4240711">Camilo Suluaga</option>
+                <option value="4240528">Pedro Paredes</option>
+                <option value="4240527">Pepito Perez</option>
+            </select>
+            
+                
+            
+            <select name="CAT_Custom_103" id="CAT_Custom_103" class="cat_dropdown">
+                <option value=" ">  Código Categoría  </option>
+                <option value="Bienes-Raices">Bienes-Raices</option>
+                <option value="Vehiculos">Vehiculos</option>
+                <option value="Compra-Venta">Compra-Venta</option>
+                <option value="Empleo">Empleo</option>
+                <option value="Aplicaciones">Aplicaciones</option>
+                <option value="Viajes-Turismo">Viajes-Turismo</option>
+                <option value="Servicios">Servicios</option>
+                <option value="Emisoras">Emisoras</option>
+                <option value="Oportunidades-Negocio">Oportunidades-Negocio</option>
+                <option value="Periodicos-Revistas">Periodicos-Revistas</option>
+                <option value="Clases-Cursos">Clases-Cursos</option>
+            </select>
+            
+            <input value="" placeholder="Subcategoria" type="text" maxlength="4000" name="CAT_Custom_98" id="CAT_Custom_98" class="input_comc" />
+
+            <!-- Ocultos **************************************************************** -->
+            <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+
+            <section>
+
+                <h4>Descripción Publicación</h4>
+                
+                <input placeholder="Nombre del Anuncio" class="input_comc" type="text" name="ItemName" id="ItemName" maxlength="255"/>
+                
+                <!-- Listado Categorías **************************************************************** -->
+
+                <br />
+                    <select name="CAT_Category" id="CAT_Category" class="cat_listbox">
+                        <option value="-1">-- Selecciona una subcategoría --</option>
+
+                        <option id="Aplicaciones" value="112436">Aplicaciones</option>
+
+                            <option id="Aplicaciones-Crecimiento" value="113213">---Crecimiento</option>
+                                <option id="Aplicaciones-Crecimiento-Android" value="113239">------Android</option>
+                                <option id="Aplicaciones-Crecimiento-BlackBerry" value="113241">------BlackBerry</option>
+                                <option id="Aplicaciones-Crecimiento-IOSMAC" value="113240">------IOS - Mac</option>
+                                <option id="Aplicaciones-Crecimiento-Nokia" value="113242">------Nokia</option>
+                                <option id="Aplicaciones-Crecimiento-Otros" value="113243">------Otros</option>
+
+                            <option id="Aplicaciones-Devocionales" value="113043">---Devocionales</option>
+                                <option id="Aplicaciones-Devocionales-Android" value="113219">------Android</option>
+                                <option id="Aplicaciones-Devocionales-BlackBerry" value="113221">------BlackBerry</option>
+                                <option id="Aplicaciones-Devocionales-IOSMAC" value="113220">------IOS - Mac</option>
+                                <option id="Aplicaciones-Devocionales-Nokia" value="113222">------Nokia</option>
+                                <option id="Aplicaciones-Devocionales-Otros" value="113223">------Otros</option>
+
+                            <option id="Aplicaciones-EstudiosBiblicos" value="113211">---Estudios Biblicos</option>
+                                <option id="Aplicaciones-EstudiosBiblicos-Android" value="113229">------Android</option>
+                                <option id="Aplicaciones-EstudiosBiblicos-BlackBerry" value="113231">------BlackBerry</option>
+                                <option id="Aplicaciones-EstudiosBiblicos-IOSMAC" value="113230">------IOS - Mac</option>
+                                <option id="Aplicaciones-EstudiosBiblicos-Nokia" value="113232">------Nokia</option>
+                                <option id="Aplicaciones-EstudiosBiblicos-Otros" value="113233">------Otros</option>
+
+                            <option id="Aplicaciones-Matrimonio" value="113214">---Matrimonio</option>
+                                <option id="Aplicaciones-Matrimonio-Android" value="113244">------Android</option>
+                                <option id="Aplicaciones-Matrimonio-BlackBerry" value="113246">------BlackBerry</option>
+                                <option id="Aplicaciones-Matrimonio-IOSMAC" value="113245">------IOS - Mac</option>
+                                <option id="Aplicaciones-Matrimonio-Nokia" value="113247">------Nokia</option>
+                                <option id="Aplicaciones-Matrimonio-Otros" value="113248">------Otros</option>
+
+                            <option id="Aplicaciones-Oracion" value="113212">---Oracion</option>
+                                <option id="Aplicaciones-Oracion-Android" value="113234">------Android</option>
+                                <option id="Aplicaciones-Oracion-BlackBerry" value="113236">------BlackBerry</option>
+                                <option id="Aplicaciones-Oracion-IOSMAC" value="113235">------IOS - Mac</option>
+                                <option id="Aplicaciones-Oracion-Nokia" value="113237">------Nokia</option>
+                                <option id="Aplicaciones-Oracion-Otros" value="113238">------Otros</option>
+
+                            <option id="Aplicaciones-Otras" value="113218">---Otras</option>
+                                <option id="Aplicaciones-Otras-Android" value="113264">------Android</option>
+                                <option id="Aplicaciones-Otras-BlackBerry" value="113265">------BlackBerry</option>
+                                <option id="Aplicaciones-Otras-IOSMAC" value="113268">------IOS - Mac</option>
+                                <option id="Aplicaciones-Otras-Nokia" value="113266">------Nokia</option>
+                                <option id="Aplicaciones-Otras-Otros" value="113267">------Otros</option>
+
+                            <option id="Aplicaciones-Peliculas" value="113210">---Peliculas</option>
+                                <option id="Aplicaciones-Peliculas-Android" value="113224">------Android</option>
+                                <option id="Aplicaciones-Peliculas-BlackBerry" value="113226">------BlackBerry</option>
+                                <option id="Aplicaciones-Peliculas-IOSMAC" value="113225">------IOS - Mac</option>
+                                <option id="Aplicaciones-Peliculas-Nokia" value="113227">------Nokia</option>
+                                <option id="Aplicaciones-Peliculas-Otros" value="113228">------Otros</option>
+
+                            <option id="Aplicaciones-Predicas" value="113217">---Predicas</option>
+                                <option id="Aplicaciones-Predicas-Android" value="113259">------Android</option>
+                                <option id="Aplicaciones-Predicas-BlackBerry" value="113261">------BlackBerry</option>
+                                <option id="Aplicaciones-Predicas-IOSMAC" value="113260">------IOS - Mac</option>
+                                <option id="Aplicaciones-Predicas-Nokia" value="113262">------Nokia</option>
+                                <option id="Aplicaciones-Predicas-Otros" value="113263">------Otros</option>
+
+                            <option id="Aplicaciones-Reflexiones" value="113216">---Reflexiones</option>
+                                <option id="Aplicaciones-Reflexiones-Android" value="113254">------Android</option>
+                                <option id="Aplicaciones-Reflexiones-BlackBerry" value="113256">------BlackBerry</option>
+                                <option id="Aplicaciones-Reflexiones-IOSMAC" value="113255">------IOS - Mac</option>
+                                <option id="Aplicaciones-Reflexiones-Nokia" value="113257">------Nokia</option>
+                                <option id="Aplicaciones-Reflexiones-Otros" value="113258">------Otros</option>
+
+                            <option id="Aplicaciones-Videos" value="113215">---Videos</option>
+                                <option id="Aplicaciones-Videos-Android" value="113249">------Android</option>
+                                <option id="Aplicaciones-Videos-BlackBerry" value="113251">------BlackBerry</option>
+                                <option id="Aplicaciones-Videos-IOSMAC" value="113250">------IOS - Mac</option>
+                                <option id="Aplicaciones-Videos-Nokia" value="113252">------Nokia</option>
+                                <option id="Aplicaciones-Videos-Otros" value="113253">------Otros</option>
+
+                        <option id="BienesRaices" value="14744">Bienes Raices</option>
+                            <option id="BienesRaices-Apartamento" value="113625">---Apartamento</option>
+                                <option id="BienesRaices-Apartamento-Arriendo" value="113633">------Arriendo</option>
+                                <option id="BienesRaices-Apartamento-Permuta" value="113635">------Permuta</option>
+                                <option id="BienesRaices-Apartamento-Venta" value="113634">------Venta</option>
+
+                            <option id="BienesRaices-Bodega" value="113628">---Bodega</option>
+                                <option id="BienesRaices-Bodega-Arriendo" value="113636">------Arriendo</option>
+                                <option id="BienesRaices-Bodega-Permuta" value="113638">------Permuta</option>
+                                <option id="BienesRaices-Bodega-Venta" value="113637">------Venta</option>
+
+                            <option id="BienesRaices-Casa" value="113624">---Casa</option>
+                                <option id="BienesRaices-Casa-Arriendo" value="113641">------Arriendo</option>
+                                <option id="BienesRaices-Casa-Permuta" value="113639">------Permuta</option>
+                                <option id="BienesRaices-Casa-Venta" value="113640">------Venta</option>
+
+                            <option id="BienesRaices-Edificio" value="113630">---Edificio</option>
+                                <option id="BienesRaices-Edificio-Arriendo" value="113642">------Arriendo</option>
+                                <option id="BienesRaices-Edificio-Permuta" value="113644">------Permuta</option>
+                                <option id="BienesRaices-Edificio-Venta" value="113643">------Venta</option>
+
+                            <option id="BienesRaices-Habitacion" value="113627">---Habitación</option>
+                                <option id="BienesRaices-Habitacion-Arriendo" value="113645">------Arriendo</option>
+                                <option id="BienesRaices-Habitacion-Permuta" value="113647">------Permuta</option>
+                                <option id="BienesRaices-Habitacion-Venta" value="113646">------Venta</option>
+
+                            <option id="BienesRaices-Local" value="113626">---Local</option>
+                                <option id="BienesRaices-Local-Arriendo" value="113648">------Arriendo</option>
+                                <option id="BienesRaices-Local-Permuta" value="113650">------Permuta</option>
+                                <option id="BienesRaices-Local-Venta" value="113649">------Venta</option>
+
+                            <option id="BienesRaices-Lote" value="113629">---Lote</option>
+                                <option id="BienesRaices-Lote-Arriendo" value="113651">------Arriendo</option>
+                                <option id="BienesRaices-Lote-Permuta" value="113653">------Permuta</option>
+                                <option id="BienesRaices-Lote-Venta" value="113652">------Venta</option>
+
+                            <option id="BienesRaices-Otro" value="113632">---Otro</option>
+                                <option id="BienesRaices-Otro-Arriendo" value="113654">------Arriendo</option>
+                                <option id="BienesRaices-Otro-Permuta" value="113656">------Permuta</option>
+                                <option id="BienesRaices-Otro-Venta" value="113655">------Venta</option>
+
+                            <option id="BienesRaices-Parqueadero" value="113631">---Parqueadero</option>
+                                <option id="BienesRaices-Parqueadero-Arriendo" value="113657">------Arriendo</option>
+                                <option id="BienesRaices-Parqueadero-Permuta" value="113659">------Permuta</option>
+                                <option id="BienesRaices-Parqueadero-Venta" value="113658">------Venta</option>
+
+                        <option id="ClasesCursos" value="14075">Clases - Cursos</option>
+                            <option id="ClasesCursos-ApoyoEscolar" value="113673">---Apoyo Escolar - Estimulación Temprana</option>
+                            <option id="ClasesCursos-Capacitacion" value="113675">---Capacitación Profesional</option>
+                            <option id="ClasesCursos-Disenoweb" value="113677">---Diseño web - Multimedia</option>
+                            <option id="ClasesCursos-Idiomas" value="113674">---Idiomas</option>
+                            <option id="ClasesCursos-Musica" value="113676">---Música - Arte</option>
+                            <option id="ClasesCursos-Otras" value="113679">---Otras Clases</option>
+                            <option id="ClasesCursos-Tutorias" value="113678">---Tutorias - Lecciones privadas</option>
+
+                        <option id="CompraVenta" value="112437">Compra - Venta</option>
+
+                            <option id="CompraVenta-Accesorios" value="113550">---Accesorios</option>
+                                <option id="CompraVenta-Accesorios-Billeteras" value="113552">------Billeteras</option>
+                                <option id="CompraVenta-Accesorios-Bolsos" value="113553">------Bolsos</option>
+                                <option id="CompraVenta-Accesorios-Canguros" value="113554">------Canguros</option>
+                                <option id="CompraVenta-Accesorios-Carteras" value="113557">------Carteras</option>
+                                <option id="CompraVenta-Accesorios-Maletines" value="113556">------Maletines para Portátiles</option>
+                                <option id="CompraVenta-Accesorios-Morrales" value="113555">------Morrales y Tulas</option>
+
+                            <option id="CompraVenta-AccesoriosVehiculos" value="113270">---Accesorios para Vehículos</option>
+                                <option id="CompraVenta-AccesoriosVehiculos-Accesorios" value="113271">------Accesorios para Carros</option>
+                                <option id="CompraVenta-AccesoriosVehiculos-Audio" value="113272">------Audio Carros</option>
+                                <option id="CompraVenta-AccesoriosVehiculos-Faroles" value="113273">------Faroles y Luces</option>
+                                <option id="CompraVenta-AccesoriosVehiculos-GPS" value="113274">------GPS</option>
+                                <option id="CompraVenta-AccesoriosVehiculos-Herramientas" value="113275">------Herramientas para Carros</option>
+                                <option id="CompraVenta-AccesoriosVehiculos-Llantas" value="113276">------Llantas y Rines</option>
+                                <option id="CompraVenta-AccesoriosVehiculos-Musica" value="113280">------Música</option>
+                                <option id="CompraVenta-AccesoriosVehiculos-Otros" value="113279">------Otros</option>
+                                <option id="CompraVenta-AccesoriosVehiculos-Repuestos" value="113277">------Repuestos y Acc. Para Motos</option>
+                                <option id="CompraVenta-AccesoriosVehiculos-Tuning" value="113278">------Tuning</option>
+
+                            <option id="CompraVenta-AnimalesMascotas" value="113281">---Animales y Mascotas</option>
+                                <option id="CompraVenta-AnimalesMascotas-Aves" value="113282">------Aves</option>
+                                <option id="CompraVenta-AnimalesMascotas-Caballos" value="113283">------Caballos</option>
+                                <option id="CompraVenta-AnimalesMascotas-Gatos" value="113284">------Gatos</option>
+                                <option id="CompraVenta-AnimalesMascotas-Libros" value="113285">------Libros de Animales</option>
+                                <option id="CompraVenta-AnimalesMascotas-Otros" value="113289">------Otros</option>
+                                <option id="CompraVenta-AnimalesMascotas-Peces" value="113286">------Peces</option>
+                                <option id="CompraVenta-AnimalesMascotas-Perros" value="113287">------Perros</option>
+                                <option id="CompraVenta-AnimalesMascotas-Roedores" value="113288">------Roedores</option>
+
+                            <option id="CompraVenta-Bebes" value="113290">---Bebés</option>
+                                <option id="CompraVenta-Bebes-Alimentacion" value="113291">------Alimentación</option>
+                                <option id="CompraVenta-Bebes-Bano" value="113294">------Baño, Salud e Higiene</option>
+                                <option id="CompraVenta-Bebes-Caminadores" value="113295">------Caminadores</option>
+                                <option id="CompraVenta-Bebes-Cargadores" value="113296">------Cargadores para Bebés</option>
+                                <option id="CompraVenta-Bebes-Coches" value="113297">------Coches para Bebés</option>
+                                <option id="CompraVenta-Bebes-Cuarto" value="113298">------Cuarto de Bebé</option>
+                                <option id="CompraVenta-Bebes-Juguetes" value="113292">------Juguetes</option>
+                                <option id="CompraVenta-Bebes-Otros" value="113304">------Otros</option>
+                                <option id="CompraVenta-Bebes-Panaleras" value="113299">------Pañaleras y Pañales</option>
+                                <option id="CompraVenta-Bebes-Recuerdos" value="113300">------Recuerdos</option>
+                                <option id="CompraVenta-Bebes-Ropa" value="113293">------Ropa</option>
+                                <option id="CompraVenta-Bebes-Seguridad" value="113301">------Seguridad</option>
+                                <option id="CompraVenta-Bebes-SillasCarros" value="113302">------Sillas para Carros</option>
+                                <option id="CompraVenta-Bebes-SillasComer" value="113303">------Sillas para Comer</option>
+
+                            <option id="CompraVenta-Biblias" value="113482">---Biblias</option>
+                                <option id="CompraVenta-Biblias-aldia" value="113483">------Biblia al Día - NBD</option>
+                                <option id="CompraVenta-Biblias-antiguaversion" value="113507">------Biblia Antigua Versión</option>
+                                <option id="CompraVenta-Biblias-bilingue" value="113485">------Biblia Bilingüe</option>
+                                <option id="CompraVenta-Biblias-Compacta" value="113486">------Biblia Compacta</option>
+                                <option id="CompraVenta-Biblias-Estudio" value="113493">------Biblia de Estudio</option>
+                                <option id="CompraVenta-Biblias-Promesas" value="113491">------Biblia de Promesas</option>
+                                <option id="CompraVenta-Biblias-Dioshablahoy" value="113492">------Biblia Dios Habla Hoy</option>
+                                <option id="CompraVenta-Biblias-regaloimitacion" value="113506">------Biblia Edición Regalo Imitación</option>
+                                <option id="CompraVenta-Biblias-ilustrada" value="113502">------Biblia Ilustrada</option>
+                                <option id="CompraVenta-Biblias-lenguajeactual" value="113495">------Biblia Lenguaje Actual</option>
+                                <option id="CompraVenta-Biblias-manual" value="113496">------Biblia Manual</option>
+                                <option id="CompraVenta-Biblias-nuevatraduccion" value="113487">------Biblia Nueva Traducción Viviente</option>
+                                <option id="CompraVenta-Biblias-reina60" value="113488">------Biblia Reina Valera 1960</option>
+                                <option id="CompraVenta-Biblias-reina95" value="113505">------Biblia Reina Valera 1995</option>
+                                <option id="CompraVenta-Biblias-reinacontemp" value="113503">------Biblia Reina Valera Contemporánea</option>
+                                <option id="CompraVenta-Biblias-reinagomez" value="113504">------Biblia Reina Valera Gomez</option>
+                                <option id="CompraVenta-Biblias-Thompson" value="113499">------Biblia Thompson</option>
+                                <option id="CompraVenta-Biblias-Ultrafina" value="113498">------Biblia Ultrafina</option>
+                                <option id="CompraVenta-Biblias-NVI" value="113490">------Biblia Versión Internacional - NVI</option>
+                                <option id="CompraVenta-Biblias-Profecia" value="113489">------Biblias de Profecia</option>
+                                <option id="CompraVenta-Biblias-Referencia" value="113484">------Biblias de Referencia</option>
+                                <option id="CompraVenta-Biblias-Digitales" value="113500">------Biblias Digitales</option>
+                                <option id="CompraVenta-Biblias-Electronicas" value="113501">------Biblias Electrónicas</option>
+                                <option id="CompraVenta-Biblias-Ninos" value="113494">------Biblias para Niños</option>
+
+                            <option id="CompraVenta-CamarasAccesorios" value="113305">---Cámaras y Accesorios</option>
+                                <option id="CompraVenta-CamarasAccesorios-AccesoriosCamaras" value="113306">------Accesorios para Cámaras</option>
+                                <option id="CompraVenta-CamarasAccesorios-Baterias" value="113307">------Baterías, Pilas y Cargadores</option>
+                                <option id="CompraVenta-CamarasAccesorios-analogicas" value="113309">------Cámaras Analógicas</option>
+                                <option id="CompraVenta-CamarasAccesorios-digitales" value="113310">------Cámaras Digitales</option>
+                                <option id="CompraVenta-CamarasAccesorios-Memodigi" value="113308">------Memorias Digitales</option>
+                                <option id="CompraVenta-CamarasAccesorios-telebino" value="113311">------Telescopios y Binoculares</option>
+                                <option id="CompraVenta-CamarasAccesorios-videofilm" value="113312">------Videocámaras y Filmadoras</option>
+
+                            <option id="CompraVenta-CelularesTelefonos" value="113313">---Celulares y Teléfonos</option>
+                                <option id="CompraVenta-CelularesTelefonos-accesorios" value="113314">------Accesorios para Celulares</option>
+                                <option id="CompraVenta-CelularesTelefonos-Celulares" value="113315">------Celulares</option>
+                                <option id="CompraVenta-CelularesTelefonos-Memorias" value="113316">------Memorias para Celular</option>
+                                <option id="CompraVenta-CelularesTelefonos-Otros" value="113322">------Otros</option>
+                                <option id="CompraVenta-CelularesTelefonos-Radios" value="113317">------Radios y Handies</option>
+                                <option id="CompraVenta-CelularesTelefonos-Tarificadores" value="113318">------Tarificadores y Cabinas</option>
+                                <option id="CompraVenta-CelularesTelefonos-TelefoniaFija" value="113319">------Telefonía Fija</option>
+                                <option id="CompraVenta-CelularesTelefonos-TelefoníaIP" value="113320">------Telefonía IP</option>
+                                <option id="CompraVenta-CelularesTelefonos-TelefonosInalámbricos" value="113321">------Teléfonos Inalámbricos</option>
+
+                            <option id="Coleccionables" value="113323">---Coleccionables</option>
+
+                            <option id="Computacion" value="113342">---Computación</option>
+                                <option id="Computacion-AccPortatiles" value="113343">------Accesorios para Portátiles</option>
+                                <option id="Computacion-AgendasDigitales" value="113354">------Agendas Digitales y Accesorios</option>
+                                <option id="Computacion-Apple" value="113344">------Apple</option>
+                                <option id="Computacion-Cartuchos" value="113346">------Cartuchos, Toner y Tintas</option>
+                                <option id="Computacion-CDs" value="113345">------CDs y DVDs Virgenes</option>
+                                <option id="Computacion-CompServidores" value="113347">------Computadores y Servidores</option>
+                                <option id="Computacion-DDExternos" value="113348">------Discos Duros y Externos</option>
+                                <option id="Computacion-UPS" value="113349">------Fuentes, UPS y Estabilizadores</option>
+                                <option id="Computacion-Impresoras" value="113350">------Impresoras</option>
+                                <option id="Computacion-iPads" value="113362">------iPad y Tablets</option>
+                                <option id="Computacion-MemPortatiles" value="113351">------Memorias Portátiles USB</option>
+                                <option id="Computacion-MemRAM" value="113352">------Memorias RAM</option>
+                                <option id="Computacion-MonVideo" value="113353">------Monitores y Video Beams</option>
+                                <option id="Computacion-PartCompon" value="113355">------Partes y Componentes de PC</option>
+                                <option id="Computacion-PerAccePC" value="113356">------Periféricos y Accesorios de PC</option>
+                                <option id="Computacion-Portatiles" value="113357">------Portátiles</option>
+                                <option id="Computacion-Quemadores" value="113358">------Quemadores DVDs y CDs</option>
+                                <option id="Computacion-RedesInal" value="113359">------Redes y Redes Inalámbricas</option>
+                                <option id="Computacion-Software" value="113360">------Software</option>
+                                <option id="Computacion-TarvideoCapt" value="113361">------Tarjeta de Video y Captura</option>
+
+                            <option id="ConsolasVideojuegos" value="113363">---Consolas y Videojuegos</option>
+                                <option id="ConsolasVideojuegos-GameBoy" value="113364">------Game Boy Advance</option>
+                                <option id="ConsolasVideojuegos-GameCube" value="113365">------Game Cube</option>
+                                <option id="ConsolasVideojuegos-JuegosPC" value="113366">------Juegos para PC</option>
+                                <option id="ConsolasVideojuegos-Wii" value="113368">------Nintendo Wii</option>
+                                <option id="ConsolasVideojuegos-DS" value="113367">------Nintendos DS</option>
+                                <option id="ConsolasVideojuegos-OtrasMarc" value="113375">------Otras marcas</option>
+                                <option id="ConsolasVideojuegos-Play2" value="113369">------PlayStation 2 - PS2</option>
+                                <option id="ConsolasVideojuegos-Play3" value="113370">------PlayStation 3 - PS3</option>
+                                <option id="ConsolasVideojuegos-PlayPor" value="113371">------PlayStation Portable - PSP</option>
+                                <option id="ConsolasVideojuegos-PlayVita" value="113372">------PlayStation Vita - PS Vita</option>
+                                <option id="ConsolasVideojuegos-Xbox" value="113373">------Xbox</option>
+                                <option id="ConsolasVideojuegos-Xbox360" value="113374">------Xbox 360</option>
+
+                            <option id="DeportesFitness" value="113376">---Deportes y Fitness</option>
+                                <option id="DeportesFitness-Aerobics" value="113377">------Aerobics y Fitness</option>
+                                <option id="DeportesFitness-Bicicletas" value="113378">------Bicicletas y Ciclismo</option>
+                                <option id="DeportesFitness-Boxeo" value="113379">------Boxeo y Artes Marciales</option>
+                                <option id="DeportesFitness-Buceo" value="113380">------Buceo</option>
+                                <option id="DeportesFitness-Camping" value="113381">------Camping</option>
+                                <option id="DeportesFitness-Extremos" value="113382">------Deportes Extremos</option>
+                                <option id="DeportesFitness-Gimnasia" value="113383">------Equipos y Máquinas de Gimnasia</option>
+                                <option id="DeportesFitness-Futbol" value="113385">------Fútbol</option>
+                                <option id="DeportesFitness-Golf" value="113386">------Golf</option>
+                                <option id="DeportesFitness-Otros" value="113396">------Otros</option>
+                                <option id="DeportesFitness-Paintball" value="113388">------Paintball y Airsoft</option>
+                                <option id="DeportesFitness-Patines" value="113390">------Patines y Tennis con Patines</option>
+                                <option id="DeportesFitness-Relojes" value="113391">------Relojes Deportivos</option>
+                                <option id="DeportesFitness-Ropa" value="113392">------Ropa Deportiva y Accesorios</option>
+                                <option id="DeportesFitness-Skateboard" value="113393">------Skateboard</option>
+                                <option id="DeportesFitness-Squash" value="113394">------Tenis y Squash</option>
+                                <option id="DeportesFitness-Tenis" value="113395">------Tennis y Zapatos Deportivos</option>
+
+                            <option id="Electrodomesticos" value="113397">---Electrodomésticos</option>
+                                <option id="Electrodomesticos-Cocina" value="113398">------Artículos de Cocina</option>
+                                <option id="Electrodomesticos-Cuidado" value="113399">------Cuidado Personal</option>
+                                <option id="Electrodomesticos-Theaters" value="113400">------DVDs y Home Theaters</option>
+                                <option id="Electrodomesticos-Lavadoras" value="113401">------Lavadoras</option>
+                                <option id="Electrodomesticos-Neveras" value="113402">------Neveras y Congeladores</option>
+                                <option id="Electrodomesticos-Otros" value="113405">------Otros</option>
+                                <option id="Electrodomesticos-PeqElectrodomesticos" value="113403">------Pequeños Electrodomésticos</option>
+                                <option id="Electrodomesticos-LEDs" value="113404">------TVs, LCDs, LEDs y Plasmas</option>
+
+                            <option id="Electronica" value="113406">---Electrónica, Audio y Video</option>
+                                <option id="Electronica-Accesorios" value="113407">------Accesorios Audio y Video</option>
+                                <option id="Electronica-Carros" value="113408">------Audio para Carros</option>
+                                <option id="Electronica-Hogar" value="113409">------Audio para el Hogar</option>
+                                <option id="Electronica-Portatil" value="113410">------Audio Portátil</option>
+                                <option id="Electronica-Profesional" value="113411">------Audio Profesional</option>
+                                <option id="Electronica-Calculadoras" value="113412">------Calculadoras</option>
+                                <option id="Electronica-Componentes" value="113413">------Componentes Electrónicos</option>
+                                <option id="Electronica-DVDs" value="113414">------DVDs y Home Theaters</option>
+                                <option id="Electronica-Seguridad" value="113415">------Equipos de Seguridad</option>
+                                <option id="Electronica-GPS" value="113416">------GPS</option>
+                                <option id="Electronica-iPad" value="113417">------iPad y Tablets</option>
+                                <option id="Electronica-iPod" value="113418">------iPod</option>
+                                <option id="Electronica-Lectores" value="113419">------Lectores de Libros Digitales</option>
+                                <option id="Electronica-Otros" value="113427">------Otros</option>
+                                <option id="Electronica-Palms" value="113420">------Palms, Agendas y Accesorios</option>
+                                <option id="Electronica-Pilas" value="113421">------Pilas, Cargadores y Baterías</option>
+                                <option id="Electronica-Bluray" value="113422">------Reproductores Blu-ray</option>
+                                <option id="Electronica-MP3" value="113423">------Reproductores MP3 y MP4</option>
+                                <option id="Electronica-Plasmas" value="113424">------TVs, LCDs, LEDs y Plasmas</option>
+                                <option id="Electronica-Beams" value="113425">------Video Beams y Pantallas</option>
+                                <option id="Electronica-Videocamaras" value="113426">------Videocámaras y Filmadoras</option>
+
+                            <option id="HogarMuebles" value="113428">---Hogar y Muebles</option>
+                                <option id="HogarMuebles-Navidad" value="113429">------Artículos para Navidad</option>
+                                <option id="HogarMuebles-Cocina" value="113430">------Cocina</option>
+                                <option id="HogarMuebles-Decoracion" value="113431">------Decoración</option>
+                                <option id="HogarMuebles-Dormitorio" value="113432">------Dormitorio</option>
+                                <option id="HogarMuebles-Herramientas" value="113433">------Herramientas</option>
+                                <option id="HogarMuebles-Muebles" value="113434">------Muebles</option>
+                                <option id="HogarMuebles-Otros" value="113435">------Otros</option>
+
+                            <option id="IndustriasOficinas" value="113436">---Industrias y Oficinas</option>
+                                <option id="IndustriasOficinas-Equipamiento" value="113437">------Equipamiento para Oficinas</option>
+                                <option id="IndustriasOficinas-Herramientas" value="113438">------Herramientas</option>
+                                <option id="IndustriasOficinas-Gastronomica" value="113439">------Industria Gastronómica</option>
+                                <option id="IndustriasOficinas-Textil" value="113440">------Industria Textil</option>
+                                <option id="IndustriasOficinas-Muebles" value="113441">------Muebles</option>
+                                <option id="IndustriasOficinas-Industrias" value="113442">------Otras Máquinas para Industrias</option>
+                                <option id="IndustriasOficinas-Otros" value="113444">------Otros</option>
+                                <option id="IndustriasOficinas-Seguridad" value="113443">------Seguridad para Industrias</option>
+
+                            <option id="InstrumentosMusicales" value="113445">---Instrumentos Musicales</option>
+                                <option id="InstrumentosMusicales-Amplificadores" value="113446">------Amplificadores</option>
+                                <option id="InstrumentosMusicales-Profesional" value="113447">------Audio Profesional</option>
+                                <option id="InstrumentosMusicales-Bajos" value="113448">------Bajos</option>
+                                <option id="InstrumentosMusicales-Percusion" value="113449">------Baterías y Percusión</option>
+                                <option id="InstrumentosMusicales-Guitarras" value="113450">------Guitarras</option>
+                                <option id="InstrumentosMusicales-Viento" value="113451">------Instrumentos de Viento</option>
+                                <option id="InstrumentosMusicales-Otros" value="113455">------Otros</option>
+                                <option id="InstrumentosMusicales-Partituras" value="113452">------Partituras</option>
+                                <option id="InstrumentosMusicales-Teclados" value="113453">------Teclados</option>
+                                <option id="InstrumentosMusicales-Violines" value="113454">------Violines</option>
+
+                            <option id="JuegosJuguetes" value="113456">---Juegos y Juguetes</option>
+                                <option id="JuegosJuguetes-Juegos" value="113457">------Juegos</option>
+                                <option id="JuegosJuguetes-AireLibre" value="113458">------Juegos al Aire Libre y Agua</option>
+                                <option id="JuegosJuguetes-Juguetes" value="113459">------Juguetes</option>
+                                <option id="JuegosJuguetes-Modelismo" value="113460">------Modelismo</option>
+                                <option id="JuegosJuguetes-Munecos" value="113461">------Muñecos y Accesorios</option>
+                                <option id="JuegosJuguetes-Otros" value="113463">------Otros</option>
+                                <option id="JuegosJuguetes-Miniatura" value="113462">------Vehículos en Miniatura</option>
+
+                            <option id="Libros" value="113464">---Libros</option>
+                                <option id="Libros-Adoracion" value="113469">------Adoración</option>
+                                <option id="Libros-Amor" value="113470">------Amor</option>
+                                <option id="Libros-Apologetica" value="113471">------Apologética</option>
+                                <option id="Libros-Pastoral" value="113472">------Ayuda Pastoral</option>
+                                <option id="Libros-Autobiografias" value="113473">------Biografías y Autobiografías</option>
+                                <option id="Libros-Carismatico" value="113474">------Carismático</option>
+                                <option id="Libros-Comentarios" value="113475">------Comentarios Bíblicos</option>
+                                <option id="Libros-Consejeria" value="113476">------Consejería</option>
+                                <option id="Libros-CrecimientoIgle" value="113477">------Crecimiento de la Iglesia</option>
+                                <option id="Libros-CrecimientoEsp" value="113466">------Crecimiento Espiritual</option>
+                                <option id="Libros-Crianza" value="113478">------Crianza de Hijos</option>
+                                <option id="Libros-Devocionales" value="113479">------Devocionales</option>
+                                <option id="Libros-Familias" value="113480">------Familias</option>
+                                <option id="Libros-Guerra" value="113468">------Guerra Espiritual</option>
+                                <option id="Libros-Otros" value="113481">------Otros</option>
+                                <option id="Libros-Relaciones" value="113465">------Relaciones</option>
+                                <option id="Libros-VidaC" value="113467">------Vida Cristiana</option>
+
+                            <option id="Musica" value="113509">---Música</option>
+                                <option id="Musica-Adoracion" value="113510">------Adoración</option>
+                                <option id="Musica-Alabanza" value="113511">------Alabanza</option>
+                                <option id="Musica-Balada" value="113518">------Balada</option>
+                                <option id="Musica-Infantil" value="113512">------Infantil</option>
+                                <option id="Musica-Instrumental" value="113513">------Instrumental</option>
+                                <option id="Musica-Llanera" value="113519">------Llanera</option>
+                                <option id="Musica-Merengue" value="113520">------Merengue</option>
+                                <option id="Musica-Pistas" value="113514">------Pistas</option>
+                                <option id="Musica-Profetica" value="113515">------Profetica</option>
+                                <option id="Musica-Ranchera" value="113516">------Ranchera</option>
+                                <option id="Musica-Rap" value="113521">------Rap</option>
+                                <option id="Musica-Reggaeton" value="113522">------Reggaeton</option>
+                                <option id="Musica-Rock" value="113523">------Rock</option>
+                                <option id="Musica-Salsa" value="113524">------Salsa</option>
+                                <option id="Musica-Tropical" value="113525">------Tropical</option>
+                                <option id="Musica-Vallenato" value="113517">------Vallenato</option>
+
+                            <option id="OtrasCat" value="113616">---Otras categorías</option>
+
+                            <option id="Peliculas" value="113526">---Películas</option>
+                                <option id="Peliculas-Accion" value="113533">------Acción</option>
+                                <option id="Peliculas-Animados" value="113527">------Animados</option>
+                                <option id="Peliculas-Aventura" value="113534">------Aventura</option>
+                                <option id="Peliculas-Comedias" value="113528">------Comedias</option>
+                                <option id="Peliculas-Cortometraje" value="113531">------Cortometraje</option>
+                                <option id="Peliculas-Documentales" value="113529">------Documentales</option>
+                                <option id="Peliculas-Dramas" value="113530">------Dramas</option>
+                                <option id="Peliculas-Romanticas" value="113535">------Romanticas</option>
+                                <option id="Peliculas-Suspenso" value="113532">------Suspenso</option>
+
+                            <option id="RelojesJoyas" value="113536">---Relojes y Joyas</option>
+                                <option id="RelojesJoyas-" value="113548">------Accesorios</option>
+                                <option id="RelojesJoyas-" value="113542">------Anillos</option>
+                                <option id="RelojesJoyas-" value="113545">------Aretes</option>
+                                <option id="RelojesJoyas-" value="113543">------Collares</option>
+                                <option id="RelojesJoyas-" value="113547">------Dijes</option>
+                                <option id="RelojesJoyas-" value="113546">------Fantasia</option>
+                                <option id="RelojesJoyas-" value="113549">------Otras joyas</option>
+                                <option id="RelojesJoyas-" value="113541">------Otros Relojes</option>
+                                <option id="RelojesJoyas-" value="113544">------Pulseras</option>
+                                <option id="RelojesJoyas-" value="113537">------Relojes para Hombre</option>
+                                <option id="RelojesJoyas-" value="113538">------Relojes para Mujer</option>
+                                <option id="RelojesJoyas-" value="113540">------Relojes para Niños</option>
+
+                            <option id="RopaFemenina" value="113558">---Ropa Femenina</option>
+                                <option id="RopaFemenina-Blusas" value="113559">------Blusas</option>
+                                <option id="RopaFemenina-Buzos" value="113560">------Buzos</option>
+                                <option id="RopaFemenina-Camisetas" value="113561">------Camisetas</option>
+                                <option id="RopaFemenina-Chalecos" value="113562">------Chalecos</option>
+                                <option id="RopaFemenina-Chaquetas" value="113563">------Chaquetas y Abrigos</option>
+                                <option id="RopaFemenina-Gabanes" value="113564">------Gabanes</option>
+                                <option id="RopaFemenina-Medias" value="113565">------Medias</option>
+                                <option id="RopaFemenina-Otros" value="113572">------Otros</option>
+                                <option id="RopaFemenina-Pantalones" value="113566">------Pantalones</option>
+                                <option id="RopaFemenina-Pijamas" value="113567">------Pijamas</option>
+                                <option id="RopaFemenina-Deportiva" value="113568">------Ropa Deportiva</option>
+                                <option id="RopaFemenina-Interior" value="113569">------Ropa Interior</option>
+                                <option id="RopaFemenina-Vestidos" value="113570">------Vestidos</option>
+                                <option id="RopaFemenina-Bano" value="113571">------Vestidos de Baño</option>
+
+                            <option id="RopaMasculina" value="113573">---Ropa Masculina</option>
+                                <option id="RopaMasculina-Buzos" value="113574">------Buzos</option>
+                                <option id="RopaMasculina-Camisas" value="113575">------Camisas</option>
+                                <option id="RopaMasculina-Camisetas" value="113576">------Camisetas</option>
+                                <option id="RopaMasculina-Chaquetas" value="113577">------Chaquetas</option>
+                                <option id="RopaMasculina-Corbatas" value="113578">------Corbatas</option>
+                                <option id="RopaMasculina-Correas" value="113579">------Correas y Cinturones</option>
+                                <option id="RopaMasculina-Gorras" value="113580">------Gorras y Cacuchas</option>
+                                <option id="RopaMasculina-Otros" value="113585">------Otros</option>
+                                <option id="RopaMasculina-Pantalones" value="113581">------Pantalones y Jeans</option>
+                                <option id="RopaMasculina-Deportiva" value="113582">------Ropa Deportiva</option>
+                                <option id="RopaMasculina-Interior" value="113583">------Ropa Interior</option>
+                                <option id="RopaMasculina-Trajes" value="113584">------Trajes</option>
+
+                            <option id="RopaBebes" value="113586">---Ropa para Bebés</option>
+                                <option id="RopaBebes-Accesorios" value="113587">------Accesorios</option>
+                                <option id="RopaBebes-Blusas" value="113588">------Blusas</option>
+                                <option id="RopaBebes-Bodys" value="113589">------Bodys</option>
+                                <option id="RopaBebes-Camisetas" value="113590">------Camisetas</option>
+                                <option id="RopaBebes-Chaquetas" value="113591">------Chaquetas</option>
+                                <option id="RopaBebes-Conjuntos" value="113592">------Conjuntos</option>
+                                <option id="RopaBebes-Otros" value="113598">------Otros</option>
+                                <option id="RopaBebes-Pantalones" value="113593">------Pantalones</option>
+                                <option id="RopaBebes-Pijamas" value="113594">------Pijamas</option>
+                                <option id="RopaBebes-Shorts" value="113595">------Shorts</option>
+                                <option id="RopaBebes-Vestidos" value="113596">------Vestidos</option>
+                                <option id="RopaBebes-Zapatos" value="113597">------Zapatos</option>
+
+                            <option id="RopaNinos" value="113599">---Ropa para Niños</option>
+
+                            <option id="SaludBelleza" value="113606">---Salud y Belleza</option>
+                                <option id="SaludBelleza-Consultorios" value="113607">------Accesorios para Consultorios</option>
+                                <option id="SaludBelleza-Bucal" value="113608">------Cuidado Bucal</option>
+                                <option id="SaludBelleza-Piel" value="113609">------Cuidado de la Piel</option>
+                                <option id="SaludBelleza-Cabello" value="113610">------Cuidado del Cabello</option>
+                                <option id="SaludBelleza-Cuerpo" value="113611">------Cuidado del Cuerpo</option>
+                                <option id="SaludBelleza-Unas" value="113612">------Cuidado para Uñas</option>
+                                <option id="SaludBelleza-Otros" value="113615">------Otros</option>
+                                <option id="SaludBelleza-Perfumes" value="113613">------Perfumes y Fragancias</option>
+                                <option id="SaludBelleza-Suplementos" value="113614">------Suplementos Alimenticios</option>
+
+                            <option id="Zapatos" value="113600">---Zapatos</option>
+                                <option id="Zapatos-Botas" value="113601">------Botas</option>
+                                <option id="Zapatos-Otros" value="113605">------Otros</option>
+                                <option id="Zapatos-Sandalias" value="113602">------Sandalias</option>
+                                <option id="Zapatos-Vestir" value="113603">------Zapatos de Vestir</option>
+                                <option id="Zapatos-Deportivos" value="113604">------Zapatos Deportivos</option>
+
+                            <option id="Comunidad" value="112630">Comunidad</option>
+                                <option id="Comunidad-Actividades" value="113700">---Actividades Comunitarias</option>
+                                <option id="Comunidad-Eventos" value="113697">---Eventos</option>
+                                <option id="Comunidad-Intercambio" value="113698">---Intercambio de Libros</option>
+                                <option id="Comunidad-Voluntarios" value="113699">---Voluntarios</option>
+
+                        <option id="Emisoras" value="112628">Emisoras</option>
+                        
+                        <option id="Empleo" value="14610">Empleo</option>
+                            <option id="Empleo-Administrativo" value="113670">---Administrativo - Secretariado</option>
+                            <option id="Empleo-Arte" value="113668">---Arte - Diseño</option>
+                            <option id="Empleo-Construccion" value="113667">---Construcción - Mantenimiento</option>
+                            <option id="Empleo-Contabilidad" value="113666">---Contabilidad - Finanzas</option>
+                            <option id="Empleo-Direccion" value="113665">---Dirección de Empresas</option>
+                            <option id="Empleo-Educacion" value="113664">---Educación - Formación</option>
+                            <option id="Empleo-Hosteleria" value="113663">---Hostelería - Turismo</option>
+                            <option id="Empleo-Imagen" value="113660">---Imagen - Sonido</option>
+                            <option id="Empleo-Informatica" value="113661">---Informática - Multimedia</option>
+                            <option id="Empleo-Ingenieria" value="113662">---Ingeniería</option>
+                            <option id="Empleo-Medicina" value="113669">---Medicina</option>
+                            <option id="Empleo-Otros" value="113671">---Otros</option>
+
+                        <option id="OportunidadesNegocio" value="112631">Oportunidades de Negocio</option>
+
+                        <option id="PeriodicosRevistas" value="112629">Periódicos y revistas</option>
+
+                        <option id="Servicios" value="112627">Servicios</option>
+                            <option id="Servicios-Computadoras" value="113689">---Computadoras - Reparación</option>
+                            <option id="Servicios-Cuidado" value="113687">---Cuidado de ninños</option>
+                            <option id="Servicios-Limpieza" value="113692">---Limpieza - Servicios Domésticos</option>
+                            <option id="Servicios-Modelos" value="113688">---Modelos - Audiciones</option>
+                            <option id="Servicios-Mudanzas" value="113693">---Mudanzas - Almacenaje</option>
+                            <option id="Servicios-Otros" value="113696">---Otros Servicios</option>
+                            <option id="Servicios-Redaccion" value="113695">---Redacción - Edición - Traducción</option>
+                            <option id="Servicios-Reparaciones" value="113694">---Reparaciones</option>
+                            <option id="Servicios-Belleza" value="113691">---Salud - Belleza - Figura</option>
+                            <option id="Servicios-Eventos" value="113690">---Servicios para Eventos</option>
+
+                        <option id="Vehiculos" value="112626">Vehículos</option>
+                            <option id="Vehiculos-Aviones" value="113686">---Aviones - Avionetas</option>
+                            <option id="Vehiculos-Buses" value="113683">---Buses</option>
+                            <option id="Vehiculos-Camionetas" value="113682">---Camionetas</option>
+                            <option id="Vehiculos-Carros" value="113680">---Carros</option>
+                            <option id="Vehiculos-Colectivos" value="113684">---Colectivos - Vehículos comerciales</option>
+                            <option id="Vehiculos-Embarcaciones" value="113685">---Embarcaciones</option>
+                            <option id="Vehiculos-Motos" value="113681">---Motos</option>
+
+                        <option id="ViajesTurismo" value="14606">Viajes - Turismo</option>
+                            <option id="ViajesTurismo-Alojamiento" value="113620">---Alojamiento Temporal</option>
+                            <option id="ViajesTurismo-Destinos" value="113618">---Destinos</option>
+                            <option id="ViajesTurismo-Turismo" value="113621">---Guía de Turismo</option>
+                            <option id="ViajesTurismo-Hoteles" value="113622">---Hoteles y Cabañas</option>
+                            <option id="ViajesTurismo-Promociones" value="113617">---Promociones</option>
+                            <option id="ViajesTurismo-Retiros" value="113623">---Retiros Espirituales</option>
+                            <option id="ViajesTurismo-Salidas" value="113619">---Salidas Grupales</option>
+                    </select>
+
+
+                    <textarea  placeholder="Resumen Publicacion" name="CAT_Custom_6" id="CAT_Custom_6" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                    
+                    <textarea  placeholder="Resumen Publicacion" name="CAT_Custom_6" id="CAT_Custom_6" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                  
+                    <textarea placeholder="Descripción del Anuncio" name="ItemDescription" id="ItemDescription" cols="10" rows="4" class="cat_listbox" text=""></textarea>
+
+            </section>
+
+            <section>
+                <h4>Imagenes y Video</h4>
+                <label class="imagenessubida"><strong>Imagen 1</strong><input placeholder="Imagen" type="file" name="CAT_Custom_1" id="CAT_Custom_1" class="input_file" /></label>
+                <label class="imagenessubida"><strong>Imagen 2</strong><input placeholder="Imagen 2" type="file" name="CAT_Custom_17" id="CAT_Custom_17" class="input_file"/></label>
+                <label class="imagenessubida"><strong>Imagen 3</strong><input placeholder="Imagen 3" type="file" name="CAT_Custom_18" id="CAT_Custom_18" class="input_file"/></label>
+                <label class="imagenessubida"><strong>Imagen 4</strong><input placeholder="Imagen 4" type="file" name="CAT_Custom_19" id="CAT_Custom_19" class="input_file"/></label>
+                <label class="imagenessubida"><strong>Imagen 5</strong><input placeholder="Imagen 5" type="file" name="CAT_Custom_44" id="CAT_Custom_44" class="input_file"/></label>
+                <label class="imagenessubida"><strong>Imagen 6</strong><input placeholder="Imagen 6" type="file" name="CAT_Custom_45" id="CAT_Custom_45" class="input_file"/></label>
+                <label class="imagenessubida"><strong>Imagen 7</strong><input placeholder="Imagen 7"type="file" name="CAT_Custom_46" id="CAT_Custom_46" class="input_file"/></label>
+                <label class="imagenessubida"><strong>Imagen 8</strong><input placeholder="Imagen 8"type="file" name="CAT_Custom_47" id="CAT_Custom_47" class="input_file"/></label>
+                <label class="imagenessubida"><strong>Imagen 9</strong><input placeholder="Imagen 9"type="file" name="CAT_Custom_48" id="CAT_Custom_48" class="input_file"/></label>
+                <label class="imagenessubida"><strong>Imagen 10</strong><input placeholder="Imagen 10" type="file" name="CAT_Custom_49" id="CAT_Custom_49" class="input_file"/></label>
+                <label class="videosubida"><strong>Video</strong><br /><input placeholder="Código video YouTube" type="text" maxlength="4000" name="CAT_Custom_20" id="CAT_Custom_20" class="codigo_video_youtube"/></label>
+            </section>
+
+            <section>
+                <h4>Precio</h4>
+                <input placeholder="Precio (solo números)" type="text" maxlength="255" name="CAT_Custom_2" id="CAT_Custom_2" class="input_comc"/>
+                <input placeholder="Precio Antes (Solo números)" type="text" maxlength="255" name="CAT_Custom_3" id="CAT_Custom_3" class="input_comc"/>
+            </section>
+
+            <section>
+                <h4>Condición</h4>
+                <select name="CAT_Custom_15" id="CAT_Custom_15" class="cat_dropdown">
+                  <option value=" ">  Estado  </option>
+                  <option value="Nuevo">Nuevo</option>
+                  <option value="Usado">Usado</option>
+                </select>
+            </section>
+
+            <section>
+                <h4>Medios de Pago</h4>    
+                <div><label><input type="checkbox" class="input_comc" name="CAT_Custom_83" id="CAT_Custom_83_0" value="Efectivo contra entrega"/> Efectivo contra entrega</label></div>
+                <div><label><input type="checkbox" class="input_comc" name="CAT_Custom_83" id="CAT_Custom_83_1" value="Tarjeta Crédito"/> Tarjeta Crédito</label></div>
+                <div><label><input type="checkbox" class="input_comc" name="CAT_Custom_83" id="CAT_Custom_83_2" value="Deposito"/> Deposito</label></div>
+            </section>
+
+            <section>
+                <h4>Garantía</h4>
+                <input placeholder="Garantía" type="text" maxlength="4000" name="CAT_Custom_85" id="CAT_Custom_85" class="input_comc"/>
+            </section>
+
+            <section>
+                <h4>Envío</h4>
+                <div><label><input type="checkbox" class="input_comc" name="CAT_Custom_84" id="CAT_Custom_84_0" value="Contra entrega"/> Contra entrega</label></div>
+                <div><label><input type="checkbox" class="input_comc" name="CAT_Custom_84" id="CAT_Custom_84_1" value="Retiro en punto de venta"/> Retiro en punto de venta</label></div>
+                <div><label><input type="checkbox" class="input_comc" name="CAT_Custom_84" id="CAT_Custom_84_2" value="Se realizan envíos"/> Se realizan envíos</label></div>
+            </section>
+
+            <section>
+                <h4>Palabra</h4>
+                <input placeholder="Número del versículo" type="text" maxlength="4000" name="CAT_Custom_42" id="CAT_Custom_42" class="input_comc" />
+                <input placeholder="Texto del versículo" type="text" maxlength="4000" name="CAT_Custom_43" id="CAT_Custom_43" class="input_comc" />    
+            </section>
+
+            <section>
+                <h4>Ubicación</h4>
+                <input placeholder="Departamento" type="text" maxlength="4000" name="CAT_Custom_21" id="CAT_Custom_21" class="input_comc" />
+
+                <select name="CAT_Custom_14" id="CAT_Custom_14" class="cat_dropdown">
+                      <option value=" ">  Ciudad  </option>
+                      <option value="Bogota">Bogota</option>
+                      <option value="Medellin">Medellin</option>
+                      <option value="Cali">Cali</option>
+                      <option value="Barranquilla">Barranquilla</option>
+                      <option value="Cartagena">Cartagena</option>
+                      <option value="Cucuta">Cucuta</option>
+                      <option value="Soledad">Soledad</option>
+                      <option value="Ibague">Ibague</option>
+                      <option value="Bucaramanga">Bucaramanga</option>
+                      <option value="Soacha">Soacha</option>
+                      <option value="Santa_Marta">Santa_Marta</option>
+                      <option value="Villavicencio">Villavicencio</option>
+                      <option value="Pereira">Pereira</option>
+                      <option value="Bello">Bello</option>
+                      <option value="Valledupar">Valledupar</option>
+                      <option value="Monteria">Monteria</option>
+                      <option value="Pasto">Pasto</option>
+                      <option value="Manizales">Manizales</option>
+                      <option value="Buenaventura">Buenaventura</option>
+                      <option value="Neiva">Neiva</option>
+                      <option value="Palmira">Palmira</option>
+                      <option value="Armenia">Armenia</option>
+                      <option value="Popayan">Popayan</option>
+                      <option value="Sincelejo">Sincelejo</option>
+                      <option value="Itagui">Itagui</option>
+                      <option value="Floridablanca">Floridablanca</option>
+                      <option value="Riohacha">Riohacha</option>
+                      <option value="Envigado">Envigado</option>
+                      <option value="Tulua">Tulua</option>
+                      <option value="Dosquebradas">Dosquebradas</option>
+                      <option value="San_Andres_de_Tumaco">San_Andres_de_Tumaco</option>
+                      <option value="Barrancabermeja">Barrancabermeja</option>
+                      <option value="Tunja">Tunja</option>
+                      <option value="Giron">Giron</option>
+                      <option value="Apartado">Apartado</option>
+                      <option value="Florencia">Florencia</option>
+                      <option value="Uribia">Uribia</option>
+                      <option value="Turbo">Turbo</option>
+                      <option value="Maicao">Maicao</option>
+                      <option value="Piedecuesta">Piedecuesta</option>
+                      <option value="Yopal">Yopal</option>
+                      <option value="Ipiales">Ipiales</option>
+                      <option value="Fusagasuga">Fusagasuga</option>
+                      <option value="Cartago">Cartago</option>
+                      <option value="Facatativa">Facatativa</option>
+                      <option value="Chia">Chia</option>
+                      <option value="Magangue">Magangue</option>
+                      <option value="Pitalito">Pitalito</option>
+                      <option value="Caucasia">Caucasia</option>
+                      <option value="Zipaquira">Zipaquira</option>
+                      <option value="Malambo">Malambo</option>
+                      <option value="Rionegro">Rionegro</option>
+                      <option value="Lorica">Lorica</option>
+                      <option value="Jamundi">Jamundi</option>
+                      <option value="Quibdo">Quibdo</option>
+                      <option value="Guadalajara_de_Buga">Guadalajara_de_Buga</option>
+                      <option value="Yumbo">Yumbo</option>
+                      <option value="Sogamoso">Sogamoso</option>
+                      <option value="Duitama">Duitama</option>
+                      <option value="Girardot">Girardot</option>
+                      <option value="Cienaga">Cienaga</option>
+                      <option value="Manaure">Manaure</option>
+                      <option value="Tierralta">Tierralta</option>
+                      <option value="Ocana">Ocana</option>
+                      <option value="Sabanalarga">Sabanalarga</option>
+                      <option value="Santander_de_Quilichao">Santander_de_Quilichao</option>
+                      <option value="Aguachica">Aguachica</option>
+                      <option value="Cerete">Cerete</option>
+                      <option value="Sahagún">Sahagún</option>
+                      <option value="Arauca">Arauca</option>
+                      <option value="Villa_del_Rosario">Villa_del_Rosario</option>
+                      <option value="Garzon">Garzon</option>
+                      <option value="Mosquera">Mosquera</option>
+                      <option value="Candelaria">Candelaria</option>
+                      <option value="Montelibano">Montelibano</option>
+                      <option value="Calarca">Calarca</option>
+                      <option value="Caldas">Caldas</option>
+                      <option value="La_Dorada">La_Dorada</option>
+                      <option value="El_Espinal">El_Espinal</option>
+                      <option value="Madrid">Madrid</option>
+                      <option value="Los_Patios">Los_Patios</option>
+                      <option value="Chigorodo">Chigorodo</option>
+                      <option value="El_Carmen_de_Bolivar">El_Carmen_de_Bolivar</option>
+                      <option value="Funza">Funza</option>
+                      <option value="Santa_Rosa_de_Cabal">Santa_Rosa_de_Cabal</option>
+                      <option value="Arjona">Arjona</option>
+                      <option value="Turbaco">Turbaco</option>
+                      <option value="San_Andres">San_Andres</option>
+                      <option value="Copacabana">Copacabana</option>
+                      <option value="Acacias">Acacias</option>
+                      <option value="San_Vicente_del_Caguan">San_Vicente_del_Caguan</option>
+                      <option value="Planeta_Rica">Planeta_Rica</option>
+                      <option value="Chiquinquira">Chiquinquira</option>
+                      <option value="San_Jose_del_Guaviare">San_Jose_del_Guaviare</option>
+                      <option value="Cienaga_de_Oro">Cienaga_de_Oro</option>
+                      <option value="Corozal">Corozal</option>
+                      <option value="La_Plata">La_Plata</option>
+                      <option value="La_Estrella">La_Estrella</option>
+                      <option value="Granada">Granada</option>
+                      <option value="Riosucio">Riosucio</option>
+                      <option value="Necocli">Necocli</option>
+                      <option value="Zona_Bananera">Zona_Bananera</option>
+                      <option value="Puerto_Asis">Puerto_Asis</option>
+                      <option value="Florida">Florida</option>
+                      <option value="Fundacion">Fundacion</option>
+                      <option value="Baranoa">Baranoa</option>
+                      <option value="El_Cerrito">El_Cerrito</option>
+                      <option value="Pamplona">Pamplona</option>
+                      <option value="Plato">Plato</option>
+                      <option value="San_Marcos">San_Marcos</option>
+                      <option value="Cajica">Cajica</option>
+                      <option value="El_Banco">El_Banco</option>
+                      <option value="Villamaria">Villamaria</option>
+                      <option value="Puerto_Boyaca">Puerto_Boyaca</option>
+                      <option value="Pradera">Pradera</option>
+                      <option value="Carepa">Carepa</option>
+                      <option value="Girardota">Girardota</option>
+                      <option value="Marinilla">Marinilla</option>
+                      <option value="Tame">Tame</option>
+                      <option value="La_Ceja">La_Ceja</option>
+                      <option value="Chinchina">Chinchina</option>
+                      <option value="Orito">Orito</option>
+                      <option value="Valle_del_Guamuez">Valle_del_Guamuez</option>
+                      <option value="Agustin_Codazzi">Agustin_Codazzi</option>
+                      <option value="Sabaneta">Sabaneta</option>
+                      <option value="Ayapel">Ayapel</option>
+                </select>
+
+                <input placeholder="Barrio" type="text" maxlength="4000" name="CAT_Custom_22" id="CAT_Custom_22" class="input_comc" />
+                <input placeholder="Dirección" type="text" maxlength="4000" name="CAT_Custom_23" id="CAT_Custom_23" class="input_comc" />
+
+            </section>
+
+            <section>
+                <h4>Información de Contácto</h4>
+                <input placeholder="Teléfono de Contácto" type="text" maxlength="255" name="CAT_Custom_24" id="CAT_Custom_24" class="input_comc" />
+                <input placeholder="Celular" type="text" maxlength="255" name="CAT_Custom_25" id="CAT_Custom_25" class="input_comc" />
+                <input placeholder="Sitio Web" type="text" maxlength="4000" name="CAT_Custom_53" id="CAT_Custom_53" class="input_comc" />
+            </section>
+
+            <!-- Bienes Raices **************************************************************** -->
+
+            <section class="data_BienesRaices">
+                <h4>Características Inmueble</h4>
+                <input placeholder="Metros Construidos" type="text" maxlength="255" name="CAT_Custom_26" id="CAT_Custom_26" class="input_comc" />
+                <input placeholder="Metros Terreno" type="text" maxlength="255" name="CAT_Custom_27" id="CAT_Custom_27" class="input_comc" />
+                <input placeholder="Años de construido" type="text" maxlength="255" name="CAT_Custom_28" id="CAT_Custom_28" class="input_comc" />
+
+                <select name="CAT_Custom_29" id="CAT_Custom_29" class="cat_dropdown">
+                  <option value=" ">  Baños  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="Mas de 10">Mas de 10</option>
+                </select>
+
+                <select name="CAT_Custom_30" id="CAT_Custom_30" class="cat_dropdown">
+                  <option value=" ">  Habitaciones  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="Mas de 10">Mas de 10</option>
+                </select>
+
+                <select name="CAT_Custom_31" id="CAT_Custom_31" class="cat_dropdown">
+                  <option value=" ">  Pisos (Cuartos)  </option>
+                  <option value="Alfombra">Alfombra</option>
+                  <option value="Cemento">Cemento</option>
+                  <option value="Cerámica">Cerámica</option>
+                  <option value="Granito">Granito</option>
+                  <option value="Madera">Madera</option>
+                  <option value="Marmol">Marmol</option>
+                  <option value="Parquet">Parquet</option>
+                  <option value="Rustico">Rustico</option>
+                  <option value="Varios">Varios</option>
+                </select>
+
+                <select name="CAT_Custom_32" id="CAT_Custom_32" class="cat_dropdown">
+                  <option value=" ">  Lineas Telefónicas  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="Más de 3">Más de 3</option>
+                </select>
+
+                <select name="CAT_Custom_33" id="CAT_Custom_33" class="cat_dropdown">
+                  <option value=" ">  Pisos (areas sociales)  </option>
+                  <option value="Alfombra">Alfombra</option>
+                  <option value="Cemento">Cemento</option>
+                  <option value="Cerámica">Cerámica</option>
+                  <option value="Granito">Granito</option>
+                  <option value="Madera">Madera</option>
+                  <option value="Marmol">Marmol</option>
+                  <option value="Parquet">Parquet</option>
+                  <option value="Rustico">Rustico</option>
+                  <option value="Varios">Varios</option>
+                </select>
+
+                <select name="CAT_Custom_34" id="CAT_Custom_34" class="cat_dropdown">
+                  <option value=" ">  Estrato  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="No tiene">No tiene</option>
+                </select>
+
+                <input placeholder="Nombre del Inmueble" type="text" maxlength="4000" name="CAT_Custom_35" id="CAT_Custom_35" class="input_comc" />
+
+                <select name="CAT_Custom_36" id="CAT_Custom_36" class="cat_dropdown">
+                  <option value=" ">  Habitaciones de servicio  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="Más de 3">Más de 3</option>
+                </select>
+
+                <select name="CAT_Custom_37" id="CAT_Custom_37" class="cat_dropdown">
+                  <option value=" ">  Ascensores  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="Más de 3">Más de 3</option>
+                  <option value="No tiene">No tiene</option>
+                </select>
+
+                <select name="CAT_Custom_38" id="CAT_Custom_38" class="cat_dropdown">
+                  <option value=" ">  ¿Negociable?  </option>
+                  <option value="Si">Si</option>
+                  <option value="No">No</option>
+                </select>
+            </section>
+
+            <section class="data_BienesRaices">
+                <h4>Características Adicionales</h4>
+                <div><label><input type="checkbox" value="Holaaaaa" name="CAT_Custom_39" id="CAT_Custom_39_0" value="Aire acondicionado"/> Aire acondicionado</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_1" value="Calefacción o Chimenea"/> Calefacción o Chimenea</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_2" value="Cocina Integral"/> Cocina Integral</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_3" value="Estacionamiento de visitantes"/> Estacionamiento de visitantes</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_4" value="Estudio / Biblioteca"/> Estudio / Biblioteca</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_5" value="Jacuzzi"/> Jacuzzi</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_6" value="Planta eléctrica"/> Planta eléctrica</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_7" value="Rejas de seguridad"/> Rejas de seguridad</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_8" value="Sauna"/> Sauna</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_9" value="TV por cable"/> TV por cable</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_10" value="Vestier"/> Vestier</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_11" value="Vista panorámica"/> Vista panorámica</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_12" value="Gas Natural"/> Gas Natural</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_13" value="Vialidad interna"/> Vialidad interna</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_14" value="Balcón"/> Balcón</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_15" value="Depósito"/> Depósito</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_16" value="Gimnasio"/> Gimnasio</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_17" value="Patio"/> Patio</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_18" value="Agua"/> Agua</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_19" value="Riego"/> Riego</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_20" value="Estar"/> Estar</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_21" value="Electricidad"/> Electricidad</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_22" value="Cercado"/> Cercado</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_23" value="Garaje"/> Garaje</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_39" id="CAT_Custom_39_24" value="Piscina"/> Piscina</label></div>
+            </section>
+
+            <section class="data_BienesRaices">
+                <h4>Cercanías a menos de dos cuadras</h4>
+                <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_0" value="Estación de metro"/> Estación de metro</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_1" value="Panaderia"/> Panaderia</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_2" value="Centro comercial"/> Centro comercial</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_3" value="Droguería"/> Droguería</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_4" value="Supermercado"/> Supermercado</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_5" value="Colegio"/> Colegio</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_6" value="Otros negocios"/> Otros negocios</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_7" value="Alimentador o Transmilenio"/> Alimentador o Transmilenio</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_8" value="Minimercado"/> Minimercado</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_9" value="Parque"/> Parque</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_10" value="Hospital"/> Hospital</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_40" id="CAT_Custom_40_11" value="Universidad"/> Universidad</label></div>
+            </section>
+
+            <section class="data_BienesRaices">
+                <h4>Instalaciones y Comodidades</h4>
+                <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_0" value="Area de BBQ"/> Area de BBQ</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_1" value="Caminerías"/> Caminerías</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_2" value="Jardines"/> Jardines</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_3" value="Salon de Fiesta"/> Salon de Fiesta</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_4" value="Escalera de Emergencia"/> Escalera de Emergencia</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_5" value="Circuito Cerrado de TV"/> Circuito Cerrado de TV</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_6" value="Conjunto Cerrado"/> Conjunto Cerrado</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_7" value="Parque infantil"/> Parque infantil</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_41" id="CAT_Custom_41_8" value="Vigilancia privada"/> Vigilancia privada</label></div>
+            </section>
+
+            <!-- Vehiculos **************************************************************** -->
+
+            <section class="data_Vehiculos">
+                <h4>Describe tu vehículo</h4>
+                <select name="CAT_Custom_54" id="CAT_Custom_54" class="cat_dropdown">
+                  <option value=" ">  Transmisión  </option>
+                  <option value="Automática">Automática</option>
+                  <option value="Mecánica">Mecánica</option>
+                </select>
+
+                <select name="CAT_Custom_55" id="CAT_Custom_55" class="cat_dropdown">
+                  <option value=" ">  Tipo Dirección  </option>
+                  <option value="Asistida">Asistida</option>
+                  <option value="Hidráulica">Hidráulica</option>
+                  <option value="Mecánica">Mecánica</option>
+                </select>
+
+                <select name="CAT_Custom_56" id="CAT_Custom_56" class="cat_dropdown">
+                  <option value=" ">  Color  </option>
+                  <option value="Amarillo">Amarillo</option>
+                  <option value="Anaranjado">Anaranjado</option>
+                  <option value="Beige">Beige</option>
+                  <option value="Blanco">Blanco</option>
+                  <option value="Crema">Crema</option>
+                  <option value="Dorado">Dorado</option>
+                  <option value="Gris">Gris</option>
+                  <option value="Marrón">Marrón</option>
+                  <option value="Morado">Morado</option>
+                  <option value="Negro">Negro</option>
+                  <option value="Plateado">Plateado</option>
+                  <option value="Rojo">Rojo</option>
+                  <option value="Verde">Verde</option>
+                  <option value="Vinotinto">Vinotinto</option>
+                  <option value="Otro">Otro</option>
+                </select>
+
+                <input placeholder="Recorrido" type="text" maxlength="4000" name="CAT_Custom_57" id="CAT_Custom_57" class="input_comc" />
+
+                <input placeholder="Placa" type="text" maxlength="4000" name="CAT_Custom_58" id="CAT_Custom_58" class="input_comc" />
+
+                <input placeholder="Vidrios" type="text" maxlength="4000" name="CAT_Custom_59" id="CAT_Custom_59" class="input_comc" />
+
+                <select name="CAT_Custom_60" id="CAT_Custom_60" class="cat_dropdown">
+                  <option value=" ">  Aire Acondicionado  </option>
+                  <option value="Si">Si</option>
+                  <option value="No">No</option>
+                </select>
+
+                <select name="CAT_Custom_62" id="CAT_Custom_62" class="cat_dropdown">
+                  <option value=" ">  Asientos  </option>
+                  <option value="Tela">Tela</option>
+                  <option value="Cuero">Cuero</option>
+                  <option value="Semi-cuero">Semi-cuero</option>
+                </select>
+
+                <select name="CAT_Custom_63" id="CAT_Custom_63" class="cat_dropdown">
+                  <option value=" ">Año</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+                  <option value="2011">2011</option>
+                  <option value="2010">2010</option>
+                  <option value="2009">2009</option>
+                  <option value="2008">2008</option>
+                  <option value="2007">2007</option>
+                  <option value="2006">2006</option>
+                  <option value="2005">2005</option>
+                  <option value="2004">2004</option>
+                  <option value="2003">2003</option>
+                  <option value="2002">2002</option>
+                  <option value="2001">2001</option>
+                  <option value="2000">2000</option>
+                  <option value="1999">1999</option>
+                  <option value="1998">1998</option>
+                  <option value="1997">1997</option>
+                  <option value="1996">1996</option>
+                  <option value="1995">1995</option>
+                  <option value="1994">1994</option>
+                  <option value="1993">1993</option>
+                  <option value="1992">1992</option>
+                  <option value="1991">1991</option>
+                  <option value="1990">1990</option>
+                  <option value="1989">1989</option>
+                  <option value="1988">1988</option>
+                  <option value="1987">1987</option>
+                  <option value="1986">1986</option>
+                  <option value="1985">1985</option>
+                  <option value="1984">1984</option>
+                  <option value="1983">1983</option>
+                  <option value="1982">1982</option>
+                  <option value="1981">1981</option>
+                  <option value="1980">1980</option>
+                  <option value="1979">1979</option>
+                  <option value="1978">1978</option>
+                  <option value="1977">1977</option>
+                  <option value="1976">1976</option>
+                  <option value="1975">1975</option>
+                  <option value="1974">1974</option>
+                  <option value="1973">1973</option>
+                  <option value="1972">1972</option>
+                  <option value="1971">1971</option>
+                  <option value="1970">1970</option>
+                  <option value="1969">1969</option>
+                  <option value="1968">1968</option>
+                  <option value="1967">1967</option>
+                  <option value="1966">1966</option>
+                  <option value="1965">1965</option>
+                  <option value="1964">1964</option>
+                  <option value="1963">1963</option>
+                  <option value="1962">1962</option>
+                  <option value="1961">1961</option>
+                  <option value="1960">1960</option>
+                  <option value="1959">1959</option>
+                  <option value="1958">1958</option>
+                  <option value="1957">1957</option>
+                  <option value="1956">1956</option>
+                  <option value="1955">1955</option>
+                  <option value="1954">1954</option>
+                  <option value="1953">1953</option>
+                  <option value="1952">1952</option>
+                  <option value="1951">1951</option>
+                  <option value="1950">1950</option>
+                  <option value="1949">1949</option>
+                  <option value="1948">1948</option>
+                  <option value="1947">1947</option>
+                  <option value="1946">1946</option>
+                  <option value="1945">1945</option>
+                  <option value="1944">1944</option>
+                  <option value="1943">1943</option>
+                  <option value="1942">1942</option>
+                  <option value="1941">1941</option>
+                  <option value="1940">1940</option>
+                  <option value="1939">1939</option>
+                  <option value="1938">1938</option>
+                  <option value="1937">1937</option>
+                  <option value="1936">1936</option>
+                  <option value="1935">1935</option>
+                  <option value="1934">1934</option>
+                  <option value="1933">1933</option>
+                  <option value="1932">1932</option>
+                  <option value="1931">1931</option>
+                  <option value="1930">1930</option>
+                  <option value="1929">1929</option>
+                  <option value="1928">1928</option>
+                  <option value="1927">1927</option>
+                  <option value="1926">1926</option>
+                  <option value="1925">1925</option>
+                  <option value="1924">1924</option>
+                  <option value="1923">1923</option>
+                  <option value="1922">1922</option>
+                  <option value="1921">1921</option>
+                  <option value="1920">1920</option>
+                  <option value="1919">1919</option>
+                  <option value="1918">1918</option>
+                  <option value="1917">1917</option>
+                  <option value="1916">1916</option>
+                  <option value="1915">1915</option>
+                  <option value="1914">1914</option>
+                  <option value="1913">1913</option>
+                  <option value="1912">1912</option>
+                  <option value="1911">1911</option>
+                  <option value="1910">1910</option>
+                  <option value="1909">1909</option>
+                  <option value="1908">1908</option>
+                  <option value="1907">1907</option>
+                  <option value="1906">1906</option>
+                  <option value="1905">1905</option>
+                  <option value="1904">1904</option>
+                  <option value="1903">1903</option>
+                  <option value="1902">1902</option>
+                  <option value="1901">1901</option>
+                </select>
+
+                <input placeholder="Versión" type="text" maxlength="4000" name="CAT_Custom_64" id="CAT_Custom_64" class="input_comc" />
+
+                <select name="CAT_Custom_65" id="CAT_Custom_65" class="cat_dropdown">
+                  <option value=" ">  ¿Motor recién reparado?  </option>
+                  <option value="Si">Si</option>
+                  <option value="No">No</option>
+                </select>
+
+                <input placeholder="Número de cilindros" type="text" maxlength="255" name="CAT_Custom_66" id="CAT_Custom_66" class="input_comc" />
+
+                <select name="CAT_Custom_67" id="CAT_Custom_67" class="cat_dropdown">
+                  <option value=" ">  ¿Único Dueño?  </option>
+                  <option value="Si">Si</option>
+                  <option value="No">No</option>
+                </select>
+
+                <select name="CAT_Custom_68" id="CAT_Custom_68" class="cat_dropdown">
+                  <option value=" ">  ¿Airbag?  </option>
+                  <option value="Si">Si</option>
+                  <option value="No">No</option>
+                </select>
+
+                <select name="CAT_Custom_69" id="CAT_Custom_69" class="cat_dropdown">
+                  <option value=" ">  Tipo de Combustible  </option>
+                  <option value="Gasolina">Gasolina</option>
+                  <option value="Gasolina y Gas">Gasolina y Gas</option>
+                  <option value="Diesel">Diesel</option>
+                </select>
+
+                <select name="CAT_Custom_70" id="CAT_Custom_70" class="cat_dropdown">
+                  <option value=" ">  Frenos ABS  </option>
+                  <option value="Si">Si</option>
+                  <option value="No">No</option>
+                </select>
+
+                <select name="CAT_Custom_71" id="CAT_Custom_71" class="cat_dropdown">
+                  <option value=" ">  Rep. Sonido  </option>
+                  <option value="R/Rep">R/Rep</option>
+                  <option value="CD">CD</option>
+                  <option value="MP3">MP3</option>
+                  <option value="No">No</option>
+                </select>
+
+                <select name="CAT_Custom_72" id="CAT_Custom_72" class="cat_dropdown">
+                  <option value=" ">  Campero  </option>
+                  <option value="4x2">4x2</option>
+                  <option value="4x4">4x4</option>
+                </select>
+
+                <input placeholder="Motor" type="text" maxlength="4000" name="CAT_Custom_73" id="CAT_Custom_73" class="input_comc" />
+
+                <select name="CAT_Custom_74" id="CAT_Custom_74" class="cat_dropdown">
+                  <option value=" ">  Doy financiamiento  </option>
+                  <option value="Si">Si</option>
+                  <option value="No">No</option>
+                </select>
+            </section>
+
+            <section class="data_Vehiculos">
+                <h4>Seguridad</h4>
+                <div><label><input type="checkbox" name="CAT_Custom_75" id="CAT_Custom_75_0" value="Rastreo satelital"/> Rastreo satelital</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_75" id="CAT_Custom_75_1" value="Alarma con control"/> Alarma con control</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_75" id="CAT_Custom_75_2" value="Asegurado"/> Asegurado</label></div>
+            </section>
+
+            <section class="data_Vehiculos">
+                <h4>Sonido</h4>
+                <div><label><input type="checkbox" name="CAT_Custom_76" id="CAT_Custom_76_0" value="Sub-Buffer (Bajos)"/> Sub-Buffer (Bajos)</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_76" id="CAT_Custom_76_1" value="Planta"/> Planta</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_76" id="CAT_Custom_76_2" value="Caja de CD's"/> Caja de CD's</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_76" id="CAT_Custom_76_3" value="DVD" /> DVD</label></div>
+            </section>
+
+            <section class="data_Vehiculos">
+                <h4>Exterior</h4>
+                <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_0" value="Llantas nuevas"/> Llantas nuevas</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_1" value="Revision tecnomecánica"/> Revision tecnomecánica</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_2" value="Forro llanta de repuesto"/> Forro llanta de repuesto</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_3" value="Película de Seguridad"/> Película de Seguridad</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_4" value="Rines de lujo"/> Rines de lujo</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_5" value="Luces anti niebla"/> Luces anti niebla</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_6" value="Retrovisores eléctricos"/> Retrovisores eléctricos</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_7" value="Estribos"/> Estribos</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_8" value="Sun Roof (Quemacoco)"/> Sun Roof (Quemacoco)</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_77" id="CAT_Custom_77_9" value="Spoiler"/> Spoiler</label></div>
+            </section>
+
+            <section class="data_Vehiculos"> 
+                <h4>Accesorios Internos</h4>
+                <div><label><input type="checkbox" name="CAT_Custom_78" id="CAT_Custom_78_0" value="Forro del volante"/> Forro del volante</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_78" id="CAT_Custom_78_1" value="Forros de asientos"/> Forros de asientos</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_78" id="CAT_Custom_78_2" value="Volante deportivo"/> Volante deportivo</label></div>
+                <div><label><input type="checkbox" name="CAT_Custom_78" id="CAT_Custom_78_3" value="Bloqueo central"/> Bloqueo central</label></div>
+            </section>
+
+            <!-- Compra-Venta **************************************************************** -->
+            <section class="data_CompraVenta">
+                <h4>Talla y Color</h4>
+
+                <input placeholder="Talla" type="text" maxlength="4000" name="CAT_Custom_80" id="CAT_Custom_80" class="input_comc" />
+                <input placeholder="Color" type="text" maxlength="4000" name="CAT_Custom_81" id="CAT_Custom_81" class="input_comc" />
+                <input  placeholder="Cantidad" type="text" maxlength="255" name="CAT_Custom_82" id="CAT_Custom_82" class="input_comc" />
+            </section>
+
+            <section class="data_CompraVenta">
+                <h4>Este producto se vende en</h4>
+
+                <input placeholder="Nombre Tienda" type="text" maxlength="4000" name="CAT_Custom_100" id="CAT_Custom_100" class="input_comc"  />
+                <input placeholder="Dirección Tienda" type="text" maxlength="4000" name="CAT_Custom_101" id="CAT_Custom_101" class="input_comc"  />
+                <input placeholder="Teléfono Tienda" type="text" maxlength="4000" name="CAT_Custom_102" id="CAT_Custom_102" class="input_comc"  />
+            </section>
+
+            <!-- Empleo **************************************************************** -->
+
+            <section class="data_Empleo">
+                <h4>Descripción Vacante</h4>
+                <input placeholder="Salario" type="text" maxlength="4000" name="CAT_Custom_86" id="CAT_Custom_86" class="input_comc" />
+
+                <select name="CAT_Custom_87" id="CAT_Custom_87" class="cat_dropdown">
+                  <option value=" ">  Tipo de contrato  </option>
+                  <option value="Termino fijo">Termino fijo</option>
+                  <option value="Indefinido">Indefinido</option>
+                </select>
+
+                <select name="CAT_Custom_88" id="CAT_Custom_88" class="cat_dropdown">
+                  <option value=" ">  Tipo de trabajo  </option>
+                  <option value="Tiempo completo">Tiempo completo</option>
+                  <option value="Medio tiempo">Medio tiempo</option>
+                  <option value="Por horas">Por horas</option>
+                  <option value="Temporal">Temporal</option>
+                  <option value="Beca / Prácticas">Beca / Prácticas</option>
+                  <option value="Desde casa">Desde casa</option>
+                </select>
+
+
+                <input placeholder="Empresa" type="text" maxlength="4000" name="CAT_Custom_89" id="CAT_Custom_89" class="input_comc" />
+
+                <input placeholder="Nombre Contacto" type="text" maxlength="4000" name="CAT_Custom_90" id="CAT_Custom_90" class="input_comc" />
+
+                <input placeholder="Email" type="text" maxlength="4000" name="CAT_Custom_91" id="CAT_Custom_91" class="input_comc" />
+            </section>
+
+            <!-- Aplicaciones **************************************************************** -->
+
+            <section class="data_Aplicaciones">
+                <h4>Descripción Aplicación</h4>
+                <input placeholder="Version" type="text" maxlength="4000" name="CAT_Custom_92" id="CAT_Custom_92" class="input_comc" />
+
+                <input placeholder="URL Descarga" type="text" maxlength="4000" name="CAT_Custom_93" id="CAT_Custom_93" class="input_comc" />
+
+                <input placeholder="Requisitos" type="text" maxlength="4000" name="CAT_Custom_94" id="CAT_Custom_94" class="input_comc" />
+
+                <input placeholder="Tamaño" type="text" maxlength="4000" name="CAT_Custom_95" id="CAT_Custom_95" class="input_comc" />
+            </section>
+
+            <!-- Botón **************************************************************** -->
+
+            <aside class="contenedor_boton_enviar_publicaciones">
+                <button class="boton_amarillo" type="submit" id="catcustomcontentbutton">Publicar</button>
+            </aside>
+
+            </section>
 
 
     </form>
