@@ -8,6 +8,24 @@ $(document).ready(function() {
     
 });
     
+
+
+
+function AutorExpo(){
+
+    var Expo_Pub = exposicionPublicacioncod;
+    var Pub_UsrID = ID_UsuarioPublicacion;
+    
+    /* AunIDUSR */
+    $("#CAT_Custom_106").val(Expo_Pub);
+    
+    /* Expo */
+    $("#CAT_Custom_105").val(Expo_Pub);
+    
+}
+
+
+
 function eliminarSubcategorias(){
 
     //Ver index en la consola: console.log( "Index: " + $( "#BienesRaices" ).index() );
