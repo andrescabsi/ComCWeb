@@ -1,19 +1,24 @@
 // Ruta: /js/Formularios-publicacion/Nueva-Publicacion.js
 
 $(document).ready(function() {
-        
+    /* Funciones */
     eliminarCampos();
     eliminarSubcategorias();
     
 });
     
 function eliminarSubcategorias(){
-// SELECCION DE CATEGORIAS Y SUBCATEGORIAS PADRE
-$(".padre_data_pub").attr("selected","selected");
+
+    /* Colocar Valor Subcategoria */
+    $("#CAT_Custom_98").val(subcategoriaPublicacion);
+    
+    // SELECCION DE CATEGORIAS Y SUBCATEGORIAS PADRE
+    $(".padre_data_pub").attr("selected","selected");
     
     $(".hijo_data_pub").click(function(){
         $(".padre_data_pub").attr("selected","selected"); 
     });
+    
 }
 
 
