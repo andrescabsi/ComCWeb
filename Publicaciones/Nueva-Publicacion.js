@@ -10,14 +10,16 @@ $(document).ready(function() {
     
 function eliminarSubcategorias(){
 
+    //Ver index en la consola: console.log( "Index: " + $( "#BienesRaices" ).index() );
+    
     /* Eliminar subcategorias extra ********************************************************
     ****************************************************************************************/
     var indicador = categoria_publicacion_actual;
+    var indicador_subcategoria = subcategoriaPublicacion;
 
     if (indicador == "BR"){
 
-        $("#CAT_Category").find("option").slice(1,63).remove();
-        $("#CAT_Category").find("option").slice(37,500).remove();
+
         
     } else if (indicador == "VH"){
 
@@ -30,7 +32,13 @@ function eliminarSubcategorias(){
         
     }else if (indicador == "APP"){
 
-        
+        $("#CAT_Category").find("option").slice( 61, 477 ).remove();
+
+        if (indicador_subcategoria == "Devocionales"){
+            $("#CAT_Category").find("option").slice( 1, 7 ).remove();
+            $("#CAT_Category").find("option").slice( 7, 60 ).remove();
+        }
+
     }else if (indicador == "VT"){
 
         
