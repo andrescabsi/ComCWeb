@@ -10,8 +10,49 @@ $(document).ready(function() {
     
 function eliminarSubcategorias(){
 
-    /* Eliminar subcategorias extra */
+    /* Eliminar subcategorias extra ********************************************************
+    ****************************************************************************************/
 
+
+    if (indicador == "BR"){
+
+        $("#CAT_Category").find("option").slice(1,63).remove();
+        $("#CAT_Category").find("option").slice(37,500).remove();
+        
+    } else if (indicador == "VH"){
+
+        
+    }else if (indicador == "CV"){
+
+        
+    }else if (indicador == "EM"){
+
+        
+    }else if (indicador == "APP"){
+
+        
+    }else if (indicador == "VT"){
+
+        
+    }else if (indicador == "SV"){
+
+        
+    }else if (indicador == "ES"){
+
+        
+    }else if (indicador == "ON"){
+
+        
+    }else if (indicador == "PR"){
+
+        
+    }else if (indicador == "CC"){
+
+        
+    }else{
+        $("#CAT_Category").remove();
+        $(".contenedor_formularios_publicacion").append("<br /><br /> <br /><h2 class='h2' style='color:red;'>MMMM ESTO ES VERGONZOSO, OCURRIO UN ERROR, POR FAVOR RECARGA LA PÁGINA</h2>");
+    }
     
 }
 
