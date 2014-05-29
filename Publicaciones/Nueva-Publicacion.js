@@ -12,7 +12,7 @@ function eliminarSubcategorias(){
 
     /* Eliminar subcategorias extra ********************************************************
     ****************************************************************************************/
-
+    var indicador = categoria_publicacion_actual;
 
     if (indicador == "BR"){
 
