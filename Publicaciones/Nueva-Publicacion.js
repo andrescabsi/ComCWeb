@@ -4,10 +4,18 @@ $(document).ready(function() {
     /* Funciones */
     eliminarCampos();
     eliminarSubcategorias();
+    SeleccionarSubcategorias();
     
 });
     
 function eliminarSubcategorias(){
+
+    /* Eliminar subcategorias extra */
+
+    
+}
+
+function SeleccionarSubcategorias(){
 
     /* Colocar Valor Subcategoria */
     $("#CAT_Custom_98").val(subcategoriaPublicacion);
