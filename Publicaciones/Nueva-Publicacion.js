@@ -5,6 +5,7 @@ $(document).ready(function() {
     eliminarCampos();
     eliminarSubcategorias();
     SeleccionarSubcategorias();
+    AutorExpo();
     
 });
     
@@ -14,13 +15,28 @@ $(document).ready(function() {
 function AutorExpo(){
 
     var Expo_Pub = exposicionPublicacioncod;
-    var Pub_UsrID = ID_UsuarioPublicacion;
-    
-    /* AunIDUSR */
-    $("#CAT_Custom_106").val(Expo_Pub);
     
     /* Expo */
-    $("#CAT_Custom_105").val(Expo_Pub);
+    if (Expo_Pub == "Baja"){
+        
+        $("#ExpoBaja1").attr("selected","selected");
+        
+    }else if (Expo_Pub == "Media"){
+        
+        $("#ExpoMedia2").attr("selected","selected");
+    
+    }else if (Expo_Pub == "Alta"){
+    
+        $("#ExpoAlta3").attr("selected","selected");
+        
+    }else{
+    
+         $("#ExpoBaja1").attr("selected","selected");
+    
+    }
+    
+   
+
     
 }
 
