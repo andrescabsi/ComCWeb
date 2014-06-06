@@ -3,7 +3,11 @@
 <script src="/js/Usuarios/Perfil-Anunciante.js"></script>
 
 
+
+
+
 <section class="section">
+    <div id="message"></div>
 <h1 class="h1">{module_pagename}</h1>
 <h4 class="h4">Completa tu información y empieza a publicar en segundos</h4>
 <section>
@@ -25,7 +29,7 @@
     <br />
     
 <!-- Formulario Creacion Perfil--> 
-<form style="display:none;" id="creacion_perfil_anunciante_nuevo" name="catcustomcontentform79240" onsubmit="return checkWholeForm79240(this)" enctype="multipart/form-data" method="post" action="/CustomContentProcess.aspx?CCID=16609&OID={module_oid}&OTYPE={module_otype}">
+<form style="display:none;" id="creacion_perfil_anunciante_nuevo" name="catcustomcontentform79240" onsubmit="return checkWholeForm79240(this)" enctype="multipart/form-data" method="post" action="/CustomContentProcess.aspx?CCID=16609&OID={module_oid}&OTYPE={module_otype}&PageID=/Usuarios/Mi-Cuenta/perfil-anunciante">
     
     <!-- ID Oculto -->
     <input style="display:none;" placeholder="ID Cliente" type="text" maxlength="255" name="CAT_Custom_21" id="CAT_Custom_21" class="cat_textbox"/>
@@ -153,7 +157,7 @@
     
     
 <!-- Validar si existe el perfil y editar perfil-->
-    <div style="display:none;" id="cont_ind_anun_pro">{module_webappscustomer,16609,a,,,,,,True,,}</div>
+    <div style="display:none;" id="cont_ind_anun_pro">{module_webappscustomer,16609,a,,,,True,,True,,}</div>
 <!-- Agregar boton publicar si ya esta registrado-->
     <div class="contenedor_boton_publicar"></div>    
 </section>
@@ -179,9 +183,8 @@
     
 <form name="catupdatedetailsformform8304" method="post" enctype="multipart/form-data" onsubmit="return checkWholeForm8304(this)" action="/MemberProcess.aspx">
 
-    <label for="CAT_Custom_507078_327">OID Anunciante</label>
-    
-    <input type="text" value="{module_customerfield,327,507078}" maxlength="4000" name="CAT_Custom_507078_327" id="CAT_Custom_507078_327" class="cat_textbox" />
+    <!-- OID Webapp Anunciante -->    
+    <input type="text" maxlength="4000" name="CAT_Custom_507078_327" id="CAT_Custom_507078_327" class="cat_textbox" />
     
     <input type="hidden" name="FormID" id="FormID" value="327" />
     
